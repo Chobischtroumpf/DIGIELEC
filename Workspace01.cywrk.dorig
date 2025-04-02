@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Workspace01\Projet DIGIELEC\Source Files\keypad.c">
+<ExpandedNodeIds>
+<v>Workspace01</v>
+<v>Workspace01\Projet DIGIELEC</v>
+<v>Workspace01\Projet DIGIELEC\TopDesign</v>
+<v>Workspace01\Projet DIGIELEC\Projet DIGIELEC.cydwr</v>
+<v>Workspace01\Projet DIGIELEC\Projet DIGIELEC.cydwr\Pins</v>
+<v>Workspace01\Projet DIGIELEC\Projet DIGIELEC.cydwr\Analog</v>
+<v>Workspace01\Projet DIGIELEC\Projet DIGIELEC.cydwr\Clocks</v>
+<v>Workspace01\Projet DIGIELEC\Projet DIGIELEC.cydwr\Interrupts</v>
+<v>Workspace01\Projet DIGIELEC\Projet DIGIELEC.cydwr\DMA</v>
+<v>Workspace01\Projet DIGIELEC\Projet DIGIELEC.cydwr\System</v>
+<v>Workspace01\Projet DIGIELEC\Projet DIGIELEC.cydwr\Directives</v>
+<v>Workspace01\Projet DIGIELEC\Projet DIGIELEC.cydwr\Flash Security</v>
+<v>Workspace01\Projet DIGIELEC\Projet DIGIELEC.cydwr\EEPROM</v>
+<v>Workspace01\Projet DIGIELEC\Header Files</v>
+<v>Workspace01\Projet DIGIELEC\Header Files\cyapicallbacks.h</v>
+<v>Workspace01\Projet DIGIELEC\Header Files\keypad.h</v>
+<v>Workspace01\Projet DIGIELEC\Source Files</v>
+<v>Workspace01\Projet DIGIELEC\Source Files\keypad.c</v>
+<v>Workspace01\Projet DIGIELEC\Source Files\main.c</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Workspace01\Projet DIGIELEC\Projet DIGIELEC.cydwr\EEPROM</v>
+<v>Workspace01\Projet DIGIELEC\Header Files</v>
+<v>Workspace01\Projet DIGIELEC\Header Files\cyapicallbacks.h</v>
+<v>Workspace01\Projet DIGIELEC\Header Files\keypad.h</v>
+<v>Workspace01\Projet DIGIELEC\Source Files</v>
+<v>Workspace01\Projet DIGIELEC\Source Files\keypad.c</v>
+<v>Workspace01\Projet DIGIELEC\Source Files\main.c</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\cy_boot</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\Pin_1</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\Timer_1</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\UART_1</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\UART_1_IntClock</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\cycodeshareexport.ld</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\cycodeshareimport.ld</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\cycodeshareimport.scat</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\cydevice.h</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\cydevice_trm.h</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\cydevicegnu.inc</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\cydeviceiar.inc</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\cydevicerv.inc</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\cydevicerv_trm.inc</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\cydisabledsheets.h</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\cyfitter.h</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\cyfitter_cfg.c</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\cyfitter_cfg.h</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\cyfittergnu.inc</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\cyfitteriar.inc</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\cyfitterrv.inc</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\cymetadata.c</v>
+<v>Workspace01\Projet DIGIELEC\Generated_Source\PSoC5\project.h</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Workspace01</v>
+<v>Workspace01\Projet DIGIELEC</v>
+<v>Workspace01\Projet DIGIELEC\TopDesign</v>
+<v>Workspace01\Projet DIGIELEC\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Workspace01</v>
+<v>Workspace01\Projet DIGIELEC</v>
+<v>Workspace01\Projet DIGIELEC\TopDesign</v>
+<v>Workspace01\Projet DIGIELEC\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Workspace01</v>
+<v>Workspace01\Projet DIGIELEC</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\keypad.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_1.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_1.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_1_PM.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_BOOT.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_INT.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_IntClock.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_PM.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Projet DIGIELEC.elf</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Projet DIGIELEC.hex</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Projet DIGIELEC.map</v>
+<v>Workspace01\Projet DIGIELEC\Projet DIGIELEC.gpdsc</v>
+<v>Workspace01\Projet DIGIELEC\Projet DIGIELEC.rpt</v>
+<v>Workspace01\Projet DIGIELEC\Projet DIGIELEC_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Workspace01</v>
+<v>Workspace01\Projet DIGIELEC</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\keypad.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_1.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_1.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_1_PM.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_BOOT.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_INT.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_IntClock.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_PM.lst</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Projet DIGIELEC.elf</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Projet DIGIELEC.hex</v>
+<v>Workspace01\Projet DIGIELEC\CortexM3\ARM_GCC_541\Debug\Projet DIGIELEC.map</v>
+<v>Workspace01\Projet DIGIELEC\Projet DIGIELEC.gpdsc</v>
+<v>Workspace01\Projet DIGIELEC\Projet DIGIELEC.rpt</v>
+<v>Workspace01\Projet DIGIELEC\Projet DIGIELEC_timing.html</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Workspace01</v>
+<v>Workspace01\Projet DIGIELEC</v>
+<v>Workspace01\Projet DIGIELEC\PSoC 5LP Architecture TRM</v>
+<v>Workspace01\Projet DIGIELEC\CY8C58LP Family Datasheet</v>
+<v>Workspace01\Projet DIGIELEC\System Reference Guides</v>
+<v>Workspace01\Projet DIGIELEC\System Reference Guides\cy_boot_v6_0</v>
+<v>Workspace01\Projet DIGIELEC\cy_clock_v2_20</v>
+<v>Workspace01\Projet DIGIELEC\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>Workspace01\Projet DIGIELEC\cy_pins_v2_20</v>
+<v>Workspace01\Projet DIGIELEC\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Workspace01\Projet DIGIELEC\PWM_v3_30.pdf</v>
+<v>Workspace01\Projet DIGIELEC\Timer_v2_80.pdf</v>
+<v>Workspace01\Projet DIGIELEC\UART_v2_50.pdf</v>
+<v>Workspace01\Projet DIGIELEC\ZeroTerminal.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Workspace01</v>
+<v>Workspace01\Projet DIGIELEC</v>
+<v>Workspace01\Projet DIGIELEC\PSoC 5LP Architecture TRM</v>
+<v>Workspace01\Projet DIGIELEC\CY8C58LP Family Datasheet</v>
+<v>Workspace01\Projet DIGIELEC\System Reference Guides</v>
+<v>Workspace01\Projet DIGIELEC\System Reference Guides\cy_boot_v6_0</v>
+<v>Workspace01\Projet DIGIELEC\cy_clock_v2_20</v>
+<v>Workspace01\Projet DIGIELEC\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>Workspace01\Projet DIGIELEC\cy_pins_v2_20</v>
+<v>Workspace01\Projet DIGIELEC\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Workspace01\Projet DIGIELEC\PWM_v3_30.pdf</v>
+<v>Workspace01\Projet DIGIELEC\Timer_v2_80.pdf</v>
+<v>Workspace01\Projet DIGIELEC\UART_v2_50.pdf</v>
+<v>Workspace01\Projet DIGIELEC\ZeroTerminal.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\Projet DIGIELEC.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\Projet DIGIELEC.cydsn\Projet DIGIELEC.cydwr" />
+<name v=".\Projet DIGIELEC.cydsn\main.c" />
+<name v=".\Projet DIGIELEC.cydsn\keypad.h" />
+<name v=".\Projet DIGIELEC.cydsn\keypad.c" />
+<name v=".\Projet DIGIELEC.cydsn\Generated_Source\PSoC5\project.h" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1209, 541" SelectedTabbedMdiWindow="ff81aab8-b6c4-49a8-9d85-502579d2f3d5"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="95e312ae-cccb-4845-9de2-8ff449ae8b8a" /><DocumentWindow Key="C:\Users\dorig\Documents\PSoC Creator\Workspace01\Projet DIGIELEC.cydsn\TopDesign\TopDesign.cysch" Guid="359d659b-e494-4b5f-b6d4-1f4671e91007" /><DocumentWindow Key="C:\Users\dorig\Documents\PSoC Creator\Workspace01\Projet DIGIELEC.cydsn\Projet DIGIELEC.cydwr" Guid="ff81aab8-b6c4-49a8-9d85-502579d2f3d5" /><DocumentWindow Key="C:\Users\dorig\Documents\PSoC Creator\Workspace01\Projet DIGIELEC.cydsn\main.c" Guid="39897a9d-d2ef-4b81-9d33-bdb2308ae0c4" /><DocumentWindow Key="C:\Users\dorig\Documents\PSoC Creator\Workspace01\Projet DIGIELEC.cydsn\keypad.h" Guid="eea94bef-25a1-4526-9077-52910595cd0a" /><DocumentWindow Key="C:\Users\dorig\Documents\PSoC Creator\Workspace01\Projet DIGIELEC.cydsn\keypad.c" Guid="fd4cc36f-ac8b-4dab-a294-59e8a61b4b64" /><DocumentWindow Key="C:\Users\dorig\Documents\PSoC Creator\Workspace01\Projet DIGIELEC.cydsn\Generated_Source\PSoC5\project.h" Guid="6e4e19b1-b2ec-484b-b11c-d9908bce94fb" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
