@@ -359,7 +359,7 @@ extern uint8 UART_1_initVar;
 #endif /* (UART_1_RXHW_ADDRESS_ENABLED) */
 
 #define UART_1_INIT_RX_INTERRUPTS_MASK \
-                                  (uint8)((1 << UART_1_RX_STS_FIFO_NOTEMPTY_SHIFT) \
+                                  (uint8)((0 << UART_1_RX_STS_FIFO_NOTEMPTY_SHIFT) \
                                         | (0 << UART_1_RX_STS_MRKSPC_SHIFT) \
                                         | (0 << UART_1_RX_STS_ADDR_MATCH_SHIFT) \
                                         | (0 << UART_1_RX_STS_PAR_ERROR_SHIFT) \

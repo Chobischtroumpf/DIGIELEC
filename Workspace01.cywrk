@@ -3,11 +3,12 @@
 <!--This file is machine generated and read. It is not intended to be edited by hand.-->
 <!--Due to this, there is no schema for this file.-->
 <CyGuid_2867d519-54d2-4c01-9830-c51cb08bc3dd type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWorkspaceSerialize" version="5" xml_contents_version="3" name="Workspace01" persistent="Workspace01.cywrk" platform="NOT_USED">
-<current_project name=".\Projet DIGIELEC.cydsn\Projet DIGIELEC.cyprj" />
+<current_project name=".\UART.cydsn\UART.cyprj" />
 <wrkspc_folders />
 <files />
 <projects>
 <v>.\Projet DIGIELEC.cydsn\Projet DIGIELEC.cyprj</v>
+<v>.\UART.cydsn\UART.cyprj</v>
 </projects>
 <workspace_id v="06b21f13-a23d-447d-9c4c-6c0feef6dca9" />
 <WriteAppVersionLastSavedWith v="4.4.0.80" />
