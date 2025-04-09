@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccBX2ML0.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
   55 001a 01       		.byte	1
   56 001b 40       		.byte	64
   57 001c 02       		.byte	2
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 2
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccBX2ML0.s 			page 2
 
 
   58 001d 1B       		.byte	27
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  112 0053 0C       		.byte	12
  113 0054 15       		.byte	21
  114 0055 2C       		.byte	44
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 3
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccBX2ML0.s 			page 3
 
 
  115 0056 16       		.byte	22
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  169 008c 4C       		.byte	76
  170 008d 40       		.byte	64
  171 008e 4D       		.byte	77
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 4
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccBX2ML0.s 			page 4
 
 
  172 008f 20       		.byte	32
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  226 00c5 30       		.byte	48
  227 00c6 A2       		.byte	-94
  228 00c7 15       		.byte	21
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 5
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccBX2ML0.s 			page 5
 
 
  229 00c8 A4       		.byte	-92
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  283 00fe CE       		.byte	-50
  284 00ff F0       		.byte	-16
  285 0100 CF       		.byte	-49
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 6
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccBX2ML0.s 			page 6
 
 
  286 0101 44       		.byte	68
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  340 0137 28       		.byte	40
  341 0138 21       		.byte	33
  342 0139 10       		.byte	16
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 7
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccBX2ML0.s 			page 7
 
 
  343 013a 22       		.byte	34
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  397 0170 58       		.byte	88
  398 0171 80       		.byte	-128
  399 0172 59       		.byte	89
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 8
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccBX2ML0.s 			page 8
 
 
  400 0173 04       		.byte	4
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  454 01a9 04       		.byte	4
  455 01aa 5B       		.byte	91
  456 01ab 04       		.byte	4
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 9
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccBX2ML0.s 			page 9
 
 
  457 01ac 5F       		.byte	95
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  511 01e2 3A       		.byte	58
  512 01e3 22       		.byte	34
  513 01e4 3B       		.byte	59
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 10
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccBX2ML0.s 			page 10
 
 
  514 01e5 84       		.byte	-124
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  568 021b 22       		.byte	34
  569 021c A3       		.byte	-93
  570 021d 20       		.byte	32
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 11
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccBX2ML0.s 			page 11
 
 
  571 021e A4       		.byte	-92
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  625 0254 1C       		.byte	28
  626 0255 01       		.byte	1
  627 0256 00       		.byte	0
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 12
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccBX2ML0.s 			page 12
 
 
  628 0257 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  682 028d 00       		.byte	0
  683 028e 38       		.byte	56
  684 028f 1F       		.byte	31
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 13
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccBX2ML0.s 			page 13
 
 
  685 0290 00       		.byte	0
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  739 02c6 10       		.byte	16
  740 02c7 12       		.byte	18
  741 02c8 00       		.byte	0
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 14
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccBX2ML0.s 			page 14
 
 
  742 02c9 00       		.byte	0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  796              		.align	2
  797              		.type	cy_metadata, %object
  798              		.size	cy_metadata, 12
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 15
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccBX2ML0.s 			page 15
 
 
  799              	cy_metadata:
@@ -876,15 +876,15 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  827 0006 00000000 		.4byte	.Ldebug_abbrev0
  828 000a 04       		.byte	0x4
  829 000b 01       		.uleb128 0x1
- 830 000c 61000000 		.4byte	.LASF17
+ 830 000c 24000000 		.4byte	.LASF17
  831 0010 0C       		.byte	0xc
- 832 0011 BB010000 		.4byte	.LASF18
- 833 0015 16000000 		.4byte	.LASF19
+ 832 0011 AC010000 		.4byte	.LASF18
+ 833 0015 06010000 		.4byte	.LASF19
  834 0019 00000000 		.4byte	.Ldebug_line0
  835 001d 02       		.uleb128 0x2
  836 001e 01       		.byte	0x1
  837 001f 06       		.byte	0x6
- 838 0020 AF010000 		.4byte	.LASF0
+ 838 0020 A0010000 		.4byte	.LASF0
  839 0024 03       		.uleb128 0x3
  840 0025 00000000 		.4byte	.LASF9
  841 0029 01       		.byte	0x1
@@ -893,34 +893,34 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  844 002f 02       		.uleb128 0x2
  845 0030 01       		.byte	0x1
  846 0031 08       		.byte	0x8
- 847 0032 53000000 		.4byte	.LASF1
+ 847 0032 16000000 		.4byte	.LASF1
  848 0036 02       		.uleb128 0x2
  849 0037 02       		.byte	0x2
  850 0038 05       		.byte	0x5
- 851 0039 9C010000 		.4byte	.LASF2
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 16
+ 851 0039 8D010000 		.4byte	.LASF2
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccBX2ML0.s 			page 16
 
 
  852 003d 02       		.uleb128 0x2
  853 003e 02       		.byte	0x2
  854 003f 07       		.byte	0x7
- 855 0040 01010000 		.4byte	.LASF3
+ 855 0040 C4000000 		.4byte	.LASF3
  856 0044 02       		.uleb128 0x2
  857 0045 04       		.byte	0x4
  858 0046 05       		.byte	0x5
- 859 0047 A6010000 		.4byte	.LASF4
+ 859 0047 97010000 		.4byte	.LASF4
  860 004b 02       		.uleb128 0x2
  861 004c 04       		.byte	0x4
  862 004d 07       		.byte	0x7
- 863 004e EF000000 		.4byte	.LASF5
+ 863 004e B2000000 		.4byte	.LASF5
  864 0052 02       		.uleb128 0x2
  865 0053 08       		.byte	0x8
  866 0054 05       		.byte	0x5
- 867 0055 8E010000 		.4byte	.LASF6
+ 867 0055 7F010000 		.4byte	.LASF6
  868 0059 02       		.uleb128 0x2
  869 005a 08       		.byte	0x8
  870 005b 07       		.byte	0x7
- 871 005c 43010000 		.4byte	.LASF7
+ 871 005c 34010000 		.4byte	.LASF7
  872 0060 04       		.uleb128 0x4
  873 0061 04       		.byte	0x4
  874 0062 05       		.byte	0x5
@@ -928,9 +928,9 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  876 0067 02       		.uleb128 0x2
  877 0068 04       		.byte	0x4
  878 0069 07       		.byte	0x7
- 879 006a 36010000 		.4byte	.LASF8
+ 879 006a F9000000 		.4byte	.LASF8
  880 006e 03       		.uleb128 0x3
- 881 006f 5A010000 		.4byte	.LASF10
+ 881 006f 4B010000 		.4byte	.LASF10
  882 0073 02       		.byte	0x2
  883 0074 18       		.byte	0x18
  884 0075 24000000 		.4byte	0x24
@@ -944,11 +944,11 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  892 008a 02       		.uleb128 0x2
  893 008b 04       		.byte	0x4
  894 008c 07       		.byte	0x7
- 895 008d 85010000 		.4byte	.LASF11
+ 895 008d 76010000 		.4byte	.LASF11
  896 0091 07       		.uleb128 0x7
  897 0092 6E000000 		.4byte	0x6e
  898 0096 08       		.uleb128 0x8
- 899 0097 24010000 		.4byte	.LASF12
+ 899 0097 E7000000 		.4byte	.LASF12
  900 009b 03       		.byte	0x3
  901 009c 1F       		.byte	0x1f
  902 009d A7000000 		.4byte	0xa7
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  906 00a7 07       		.uleb128 0x7
  907 00a8 79000000 		.4byte	0x79
  908 00ac 05       		.uleb128 0x5
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 17
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccBX2ML0.s 			page 17
 
 
  909 00ad 91000000 		.4byte	0x91
@@ -968,7 +968,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  913 00ba 03       		.byte	0x3
  914 00bb 00       		.byte	0
  915 00bc 08       		.uleb128 0x8
- 916 00bd 14010000 		.4byte	.LASF13
+ 916 00bd D7000000 		.4byte	.LASF13
  917 00c1 03       		.byte	0x3
  918 00c2 8A       		.byte	0x8a
  919 00c3 CD000000 		.4byte	0xcd
@@ -978,7 +978,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  923 00cd 07       		.uleb128 0x7
  924 00ce AC000000 		.4byte	0xac
  925 00d2 08       		.uleb128 0x8
- 926 00d3 77010000 		.4byte	.LASF14
+ 926 00d3 68010000 		.4byte	.LASF14
  927 00d7 03       		.byte	0x3
  928 00d8 98       		.byte	0x98
  929 00d9 E3000000 		.4byte	0xe3
@@ -995,7 +995,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  940 00f6 FF       		.byte	0xff
  941 00f7 00       		.byte	0
  942 00f8 08       		.uleb128 0x8
- 943 00f9 62010000 		.4byte	.LASF15
+ 943 00f9 53010000 		.4byte	.LASF15
  944 00fd 03       		.byte	0x3
  945 00fe A6       		.byte	0xa6
  946 00ff 09010000 		.4byte	0x109
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  963 0125 2F010000 		.4byte	0x12f
  964 0129 05       		.uleb128 0x5
  965 012a 03       		.byte	0x3
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 18
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccBX2ML0.s 			page 18
 
 
  966 012b 00000000 		.4byte	cy_metadata
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  1020 0030 00       		.byte	0
  1021 0031 00       		.byte	0
  1022 0032 05       		.uleb128 0x5
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 19
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccBX2ML0.s 			page 19
 
 
  1023 0033 01       		.uleb128 0x1
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  1077 0006 00000000 		.4byte	.Ldebug_info0
  1078 000a 04       		.byte	0x4
  1079 000b 00       		.byte	0
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 20
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccBX2ML0.s 			page 20
 
 
  1080 000c 0000     		.2byte	0
@@ -1160,114 +1160,111 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 1
  1090 000a 63795F6D 		.ascii	"cy_metadata\000"
  1090      65746164 
  1090      61746100 
- 1091              	.LASF19:
- 1092 0016 433A5C55 		.ascii	"C:\\Users\\dorig\\Documents\\PSoC Creator\\Workspac"
- 1092      73657273 
- 1092      5C646F72 
- 1092      69675C44 
- 1092      6F63756D 
- 1093 0044 6530315C 		.ascii	"e01\\UART.cydsn\000"
- 1093      55415254 
- 1093      2E637964 
- 1093      736E00
- 1094              	.LASF1:
- 1095 0053 756E7369 		.ascii	"unsigned char\000"
- 1095      676E6564 
- 1095      20636861 
- 1095      7200
- 1096              	.LASF17:
- 1097 0061 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1097      43313120 
- 1097      352E342E 
- 1097      31203230 
- 1097      31363036 
- 1098 0094 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 1098      20726576 
- 1098      6973696F 
- 1098      6E203233 
- 1098      37373135 
- 1099 00c7 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 1099      66756E63 
- 1099      74696F6E 
- 1099      2D736563 
- 1099      74696F6E 
- 1100              	.LASF5:
- 1101 00ef 6C6F6E67 		.ascii	"long unsigned int\000"
- 1101      20756E73 
- 1101      69676E65 
- 1101      6420696E 
- 1101      7400
- 1102              	.LASF3:
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 21
+ 1091              	.LASF1:
+ 1092 0016 756E7369 		.ascii	"unsigned char\000"
+ 1092      676E6564 
+ 1092      20636861 
+ 1092      7200
+ 1093              	.LASF17:
+ 1094 0024 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1094      43313120 
+ 1094      352E342E 
+ 1094      31203230 
+ 1094      31363036 
+ 1095 0057 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1095      20726576 
+ 1095      6973696F 
+ 1095      6E203233 
+ 1095      37373135 
+ 1096 008a 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1096      66756E63 
+ 1096      74696F6E 
+ 1096      2D736563 
+ 1096      74696F6E 
+ 1097              	.LASF5:
+ 1098 00b2 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1098      20756E73 
+ 1098      69676E65 
+ 1098      6420696E 
+ 1098      7400
+ 1099              	.LASF3:
+ 1100 00c4 73686F72 		.ascii	"short unsigned int\000"
+ 1100      7420756E 
+ 1100      7369676E 
+ 1100      65642069 
+ 1100      6E7400
+ 1101              	.LASF13:
+ 1102 00d7 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 1102      6574615F 
+ 1102      63757374 
+ 1102      6E766C00 
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccBX2ML0.s 			page 21
 
 
- 1103 0101 73686F72 		.ascii	"short unsigned int\000"
- 1103      7420756E 
- 1103      7369676E 
- 1103      65642069 
- 1103      6E7400
- 1104              	.LASF13:
- 1105 0114 63795F6D 		.ascii	"cy_meta_custnvl\000"
- 1105      6574615F 
- 1105      63757374 
- 1105      6E766C00 
- 1106              	.LASF12:
- 1107 0124 63795F6D 		.ascii	"cy_meta_configecc\000"
- 1107      6574615F 
- 1107      636F6E66 
- 1107      69676563 
- 1107      6300
- 1108              	.LASF8:
- 1109 0136 756E7369 		.ascii	"unsigned int\000"
- 1109      676E6564 
- 1109      20696E74 
- 1109      00
+ 1103              	.LASF12:
+ 1104 00e7 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 1104      6574615F 
+ 1104      636F6E66 
+ 1104      69676563 
+ 1104      6300
+ 1105              	.LASF8:
+ 1106 00f9 756E7369 		.ascii	"unsigned int\000"
+ 1106      676E6564 
+ 1106      20696E74 
+ 1106      00
+ 1107              	.LASF19:
+ 1108 0106 433A5C55 		.ascii	"C:\\Users\\gortz\\Desktop\\DE\\DIGIELEC\\UART.cydsn"
+ 1108      73657273 
+ 1108      5C676F72 
+ 1108      747A5C44 
+ 1108      65736B74 
+ 1109 0133 00       		.ascii	"\000"
  1110              	.LASF7:
- 1111 0143 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1111 0134 6C6F6E67 		.ascii	"long long unsigned int\000"
  1111      206C6F6E 
  1111      6720756E 
  1111      7369676E 
  1111      65642069 
  1112              	.LASF10:
- 1113 015a 75696E74 		.ascii	"uint8_t\000"
+ 1113 014b 75696E74 		.ascii	"uint8_t\000"
  1113      385F7400 
  1114              	.LASF15:
- 1115 0162 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 1115 0153 63795F6D 		.ascii	"cy_meta_flashprotect\000"
  1115      6574615F 
  1115      666C6173 
  1115      6870726F 
  1115      74656374 
  1116              	.LASF14:
- 1117 0177 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 1117 0168 63795F6D 		.ascii	"cy_meta_wonvl\000"
  1117      6574615F 
  1117      776F6E76 
  1117      6C00
  1118              	.LASF11:
- 1119 0185 73697A65 		.ascii	"sizetype\000"
+ 1119 0176 73697A65 		.ascii	"sizetype\000"
  1119      74797065 
  1119      00
  1120              	.LASF6:
- 1121 018e 6C6F6E67 		.ascii	"long long int\000"
+ 1121 017f 6C6F6E67 		.ascii	"long long int\000"
  1121      206C6F6E 
  1121      6720696E 
  1121      7400
  1122              	.LASF2:
- 1123 019c 73686F72 		.ascii	"short int\000"
+ 1123 018d 73686F72 		.ascii	"short int\000"
  1123      7420696E 
  1123      7400
  1124              	.LASF4:
- 1125 01a6 6C6F6E67 		.ascii	"long int\000"
+ 1125 0197 6C6F6E67 		.ascii	"long int\000"
  1125      20696E74 
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccCmKseS.s 			page 22
-
-
  1125      00
  1126              	.LASF0:
- 1127 01af 7369676E 		.ascii	"signed char\000"
+ 1127 01a0 7369676E 		.ascii	"signed char\000"
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccBX2ML0.s 			page 22
+
+
  1127      65642063 
  1127      68617200 
  1128              	.LASF18:
- 1129 01bb 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
+ 1129 01ac 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
  1129      72617465 
  1129      645F536F 
  1129      75726365 

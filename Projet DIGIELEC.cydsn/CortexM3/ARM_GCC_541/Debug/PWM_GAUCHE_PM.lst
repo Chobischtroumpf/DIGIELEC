@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 1
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccIfBcOR.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 1
   28:Generated_Source\PSoC5/PWM_GAUCHE_PM.c **** *  Saves the current user configuration of the component.
   29:Generated_Source\PSoC5/PWM_GAUCHE_PM.c **** *
   30:Generated_Source\PSoC5/PWM_GAUCHE_PM.c **** * Parameters:
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 2
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccIfBcOR.s 			page 2
 
 
   31:Generated_Source\PSoC5/PWM_GAUCHE_PM.c **** *  None
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 1
   64:Generated_Source\PSoC5/PWM_GAUCHE_PM.c ****             PWM_GAUCHE_backup.PWMControlRegister = PWM_GAUCHE_ReadControlRegister();
   49              		.loc 1 64 0
   50 0016 FFF7FEFF 		bl	PWM_GAUCHE_ReadControlRegister
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 3
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccIfBcOR.s 			page 3
 
 
   51              	.LVL2:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 1
   92:Generated_Source\PSoC5/PWM_GAUCHE_PM.c ****                 PWM_GAUCHE_WritePeriod(PWM_GAUCHE_backup.PWMPeriod);
   78              		.loc 1 92 0
   79 0002 074C     		ldr	r4, .L7
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 4
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccIfBcOR.s 			page 4
 
 
   80 0004 A088     		ldrh	r0, [r4, #4]
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 1
  115:Generated_Source\PSoC5/PWM_GAUCHE_PM.c **** 
  116:Generated_Source\PSoC5/PWM_GAUCHE_PM.c **** 
  117:Generated_Source\PSoC5/PWM_GAUCHE_PM.c **** /*******************************************************************************
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 5
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccIfBcOR.s 			page 5
 
 
  118:Generated_Source\PSoC5/PWM_GAUCHE_PM.c **** * Function Name: PWM_GAUCHE_Sleep
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 1
  148:Generated_Source\PSoC5/PWM_GAUCHE_PM.c ****         }
  149:Generated_Source\PSoC5/PWM_GAUCHE_PM.c ****     #endif /* (PWM_GAUCHE_UseControl) */
  150:Generated_Source\PSoC5/PWM_GAUCHE_PM.c **** 
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 6
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccIfBcOR.s 			page 6
 
 
  151:Generated_Source\PSoC5/PWM_GAUCHE_PM.c ****     /* Stop component */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 1
  161              		@ args = 0, pretend = 0, frame = 0
  162              		@ frame_needed = 0, uses_anonymous_args = 0
  163 0000 08B5     		push	{r3, lr}
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 7
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccIfBcOR.s 			page 7
 
 
  164              		.cfi_def_cfa_offset 8
@@ -409,48 +409,48 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 1
  201 0006 00000000 		.4byte	.Ldebug_abbrev0
  202 000a 04       		.byte	0x4
  203 000b 01       		.uleb128 0x1
- 204 000c 96000000 		.4byte	.LASF35
+ 204 000c B5000000 		.4byte	.LASF35
  205 0010 0C       		.byte	0xc
- 206 0011 31000000 		.4byte	.LASF36
- 207 0015 7D010000 		.4byte	.LASF37
+ 206 0011 50000000 		.4byte	.LASF36
+ 207 0015 43010000 		.4byte	.LASF37
  208 0019 00000000 		.4byte	.Ldebug_ranges0+0
  209 001d 00000000 		.4byte	0
  210 0021 00000000 		.4byte	.Ldebug_line0
  211 0025 02       		.uleb128 0x2
  212 0026 01       		.byte	0x1
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 8
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccIfBcOR.s 			page 8
 
 
  213 0027 06       		.byte	0x6
- 214 0028 F0020000 		.4byte	.LASF0
+ 214 0028 E1020000 		.4byte	.LASF0
  215 002c 02       		.uleb128 0x2
  216 002d 01       		.byte	0x1
  217 002e 08       		.byte	0x8
- 218 002f 88000000 		.4byte	.LASF1
+ 218 002f A7000000 		.4byte	.LASF1
  219 0033 02       		.uleb128 0x2
  220 0034 02       		.byte	0x2
  221 0035 05       		.byte	0x5
- 222 0036 BA020000 		.4byte	.LASF2
+ 222 0036 AB020000 		.4byte	.LASF2
  223 003a 02       		.uleb128 0x2
  224 003b 02       		.byte	0x2
  225 003c 07       		.byte	0x7
- 226 003d 58000000 		.4byte	.LASF3
+ 226 003d 77000000 		.4byte	.LASF3
  227 0041 02       		.uleb128 0x2
  228 0042 04       		.byte	0x4
  229 0043 05       		.byte	0x5
- 230 0044 D6020000 		.4byte	.LASF4
+ 230 0044 C7020000 		.4byte	.LASF4
  231 0048 02       		.uleb128 0x2
  232 0049 04       		.byte	0x4
  233 004a 07       		.byte	0x7
- 234 004b 52010000 		.4byte	.LASF5
+ 234 004b 8B010000 		.4byte	.LASF5
  235 004f 02       		.uleb128 0x2
  236 0050 08       		.byte	0x8
  237 0051 05       		.byte	0x5
- 238 0052 86020000 		.4byte	.LASF6
+ 238 0052 77020000 		.4byte	.LASF6
  239 0056 02       		.uleb128 0x2
  240 0057 08       		.byte	0x8
  241 0058 07       		.byte	0x7
- 242 0059 48020000 		.4byte	.LASF7
+ 242 0059 39020000 		.4byte	.LASF7
  243 005d 03       		.uleb128 0x3
  244 005e 04       		.byte	0x4
  245 005f 05       		.byte	0x5
@@ -458,34 +458,34 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 1
  247 0064 02       		.uleb128 0x2
  248 0065 04       		.byte	0x4
  249 0066 07       		.byte	0x7
- 250 0067 3B020000 		.4byte	.LASF8
+ 250 0067 2C020000 		.4byte	.LASF8
  251 006b 04       		.uleb128 0x4
- 252 006c 64010000 		.4byte	.LASF9
+ 252 006c 9D010000 		.4byte	.LASF9
  253 0070 02       		.byte	0x2
  254 0071 E801     		.2byte	0x1e8
  255 0073 2C000000 		.4byte	0x2c
  256 0077 04       		.uleb128 0x4
- 257 0078 23020000 		.4byte	.LASF10
+ 257 0078 14020000 		.4byte	.LASF10
  258 007c 02       		.byte	0x2
  259 007d E901     		.2byte	0x1e9
  260 007f 3A000000 		.4byte	0x3a
  261 0083 02       		.uleb128 0x2
  262 0084 04       		.byte	0x4
  263 0085 04       		.byte	0x4
- 264 0086 6B000000 		.4byte	.LASF11
+ 264 0086 8A000000 		.4byte	.LASF11
  265 008a 02       		.uleb128 0x2
  266 008b 08       		.byte	0x8
  267 008c 04       		.byte	0x4
- 268 008d C5010000 		.4byte	.LASF12
+ 268 008d CC010000 		.4byte	.LASF12
  269 0091 02       		.uleb128 0x2
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 9
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccIfBcOR.s 			page 9
 
 
  270 0092 01       		.byte	0x1
  271 0093 08       		.byte	0x8
- 272 0094 DF020000 		.4byte	.LASF13
+ 272 0094 D0020000 		.4byte	.LASF13
  273 0098 04       		.uleb128 0x4
- 274 0099 78020000 		.4byte	.LASF14
+ 274 0099 69020000 		.4byte	.LASF14
  275 009d 02       		.byte	0x2
  276 009e 9202     		.2byte	0x292
  277 00a0 A4000000 		.4byte	0xa4
@@ -494,18 +494,18 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 1
  280 00a9 02       		.uleb128 0x2
  281 00aa 08       		.byte	0x8
  282 00ab 04       		.byte	0x4
- 283 00ac E4020000 		.4byte	.LASF15
+ 283 00ac D5020000 		.4byte	.LASF15
  284 00b0 02       		.uleb128 0x2
  285 00b1 04       		.byte	0x4
  286 00b2 07       		.byte	0x7
- 287 00b3 7D020000 		.4byte	.LASF16
+ 287 00b3 6E020000 		.4byte	.LASF16
  288 00b7 06       		.uleb128 0x6
  289 00b8 08       		.byte	0x8
  290 00b9 03       		.byte	0x3
  291 00ba 6B       		.byte	0x6b
  292 00bb FC000000 		.4byte	0xfc
  293 00bf 07       		.uleb128 0x7
- 294 00c0 43010000 		.4byte	.LASF17
+ 294 00c0 7C010000 		.4byte	.LASF17
  295 00c4 03       		.byte	0x3
  296 00c5 6E       		.byte	0x6e
  297 00c6 6B000000 		.4byte	0x6b
@@ -523,28 +523,28 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 1
  309 00de 77000000 		.4byte	0x77
  310 00e2 04       		.byte	0x4
  311 00e3 07       		.uleb128 0x7
- 312 00e4 26030000 		.4byte	.LASF20
+ 312 00e4 17030000 		.4byte	.LASF20
  313 00e8 03       		.byte	0x3
  314 00e9 76       		.byte	0x76
  315 00ea 6B000000 		.4byte	0x6b
  316 00ee 06       		.byte	0x6
  317 00ef 07       		.uleb128 0x7
- 318 00f0 6A010000 		.4byte	.LASF21
+ 318 00f0 A3010000 		.4byte	.LASF21
  319 00f4 03       		.byte	0x3
  320 00f5 86       		.byte	0x86
  321 00f6 6B000000 		.4byte	0x6b
  322 00fa 07       		.byte	0x7
  323 00fb 00       		.byte	0
  324 00fc 08       		.uleb128 0x8
- 325 00fd FC020000 		.4byte	.LASF22
+ 325 00fd ED020000 		.4byte	.LASF22
  326 0101 03       		.byte	0x3
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 10
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccIfBcOR.s 			page 10
 
 
  327 0102 8B       		.byte	0x8b
  328 0103 B7000000 		.4byte	0xb7
  329 0107 09       		.uleb128 0x9
- 330 0108 E3010000 		.4byte	.LASF23
+ 330 0108 B6010000 		.4byte	.LASF23
  331 010c 01       		.byte	0x1
  332 010d 2A       		.byte	0x2a
  333 010e 00000000 		.4byte	.LFB0
@@ -563,7 +563,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 1
  346 0133 E0010000 		.4byte	0x1e0
  347 0137 00       		.byte	0
  348 0138 09       		.uleb128 0x9
- 349 0139 5F020000 		.4byte	.LASF24
+ 349 0139 50020000 		.4byte	.LASF24
  350 013d 01       		.byte	0x1
  351 013e 58       		.byte	0x58
  352 013f 00000000 		.4byte	.LFB1
@@ -582,7 +582,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 1
  365 0164 01020000 		.4byte	0x201
  366 0168 00       		.byte	0
  367 0169 09       		.uleb128 0x9
- 368 016a 2A020000 		.4byte	.LASF25
+ 368 016a 1B020000 		.4byte	.LASF25
  369 016e 01       		.byte	0x1
  370 016f 88       		.byte	0x88
  371 0170 00000000 		.4byte	.LFB2
@@ -598,10 +598,10 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 1
  381 018c 07010000 		.4byte	0x107
  382 0190 00       		.byte	0
  383 0191 09       		.uleb128 0x9
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 11
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccIfBcOR.s 			page 11
 
 
- 384 0192 14030000 		.4byte	.LASF26
+ 384 0192 05030000 		.4byte	.LASF26
  385 0196 01       		.byte	0x1
  386 0197 B2       		.byte	0xb2
  387 0198 00000000 		.4byte	.LFB3
@@ -617,7 +617,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 1
  397 01b4 17020000 		.4byte	0x217
  398 01b8 00       		.byte	0
  399 01b9 0B       		.uleb128 0xb
- 400 01ba C4020000 		.4byte	.LASF38
+ 400 01ba B5020000 		.4byte	.LASF38
  401 01be 01       		.byte	0x1
  402 01bf 14       		.byte	0x14
  403 01c0 FC000000 		.4byte	0xfc
@@ -625,46 +625,46 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 1
  405 01c5 03       		.byte	0x3
  406 01c6 00000000 		.4byte	PWM_GAUCHE_backup
  407 01ca 0C       		.uleb128 0xc
- 408 01cb 94020000 		.4byte	.LASF27
- 409 01cf 94020000 		.4byte	.LASF27
+ 408 01cb 85020000 		.4byte	.LASF27
+ 409 01cf 85020000 		.4byte	.LASF27
  410 01d3 03       		.byte	0x3
  411 01d4 C0       		.byte	0xc0
  412 01d5 0C       		.uleb128 0xc
- 413 01d6 71000000 		.4byte	.LASF28
- 414 01da 71000000 		.4byte	.LASF28
+ 413 01d6 90000000 		.4byte	.LASF28
+ 414 01da 90000000 		.4byte	.LASF28
  415 01de 03       		.byte	0x3
  416 01df B3       		.byte	0xb3
  417 01e0 0C       		.uleb128 0xc
- 418 01e1 24010000 		.4byte	.LASF29
- 419 01e5 24010000 		.4byte	.LASF29
+ 418 01e1 11000000 		.4byte	.LASF29
+ 419 01e5 11000000 		.4byte	.LASF29
  420 01e9 03       		.byte	0x3
  421 01ea 9D       		.byte	0x9d
  422 01eb 0C       		.uleb128 0xc
- 423 01ec CC010000 		.4byte	.LASF30
- 424 01f0 CC010000 		.4byte	.LASF30
+ 423 01ec D3010000 		.4byte	.LASF30
+ 424 01f0 D3010000 		.4byte	.LASF30
  425 01f4 03       		.byte	0x3
  426 01f5 BE       		.byte	0xbe
  427 01f6 0C       		.uleb128 0xc
- 428 01f7 0B020000 		.4byte	.LASF31
- 429 01fb 0B020000 		.4byte	.LASF31
+ 428 01f7 FC010000 		.4byte	.LASF31
+ 429 01fb FC010000 		.4byte	.LASF31
  430 01ff 03       		.byte	0x3
  431 0200 BA       		.byte	0xba
  432 0201 0C       		.uleb128 0xc
- 433 0202 11000000 		.4byte	.LASF32
- 434 0206 11000000 		.4byte	.LASF32
+ 433 0202 30000000 		.4byte	.LASF32
+ 434 0206 30000000 		.4byte	.LASF32
  435 020a 03       		.byte	0x3
  436 020b 9E       		.byte	0x9e
  437 020c 0C       		.uleb128 0xc
- 438 020d AA020000 		.4byte	.LASF33
- 439 0211 AA020000 		.4byte	.LASF33
+ 438 020d 9B020000 		.4byte	.LASF33
+ 439 0211 9B020000 		.4byte	.LASF33
  440 0215 03       		.byte	0x3
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 12
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccIfBcOR.s 			page 12
 
 
  441 0216 93       		.byte	0x93
  442 0217 0C       		.uleb128 0xc
- 443 0218 F9010000 		.4byte	.LASF34
- 444 021c F9010000 		.4byte	.LASF34
+ 443 0218 EA010000 		.4byte	.LASF34
+ 444 021c EA010000 		.4byte	.LASF34
  445 0220 03       		.byte	0x3
  446 0221 DB       		.byte	0xdb
  447 0222 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 1
  495 002d 0E       		.uleb128 0xe
  496 002e 3A       		.uleb128 0x3a
  497 002f 0B       		.uleb128 0xb
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 13
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccIfBcOR.s 			page 13
 
 
  498 0030 3B       		.uleb128 0x3b
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 1
  552 0066 09       		.uleb128 0x9
  553 0067 2E       		.uleb128 0x2e
  554 0068 01       		.byte	0x1
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 14
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccIfBcOR.s 			page 14
 
 
  555 0069 3F       		.uleb128 0x3f
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 1
  609 00a2 0E       		.uleb128 0xe
  610 00a3 03       		.uleb128 0x3
  611 00a4 0E       		.uleb128 0xe
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 15
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccIfBcOR.s 			page 15
 
 
  612 00a5 3A       		.uleb128 0x3a
@@ -892,218 +892,216 @@ ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 1
  655 0007 50574D50 		.ascii	"PWMPeriod\000"
  655      6572696F 
  655      6400
- 656              	.LASF32:
- 657 0011 50574D5F 		.ascii	"PWM_GAUCHE_WriteControlRegister\000"
+ 656              	.LASF29:
+ 657 0011 50574D5F 		.ascii	"PWM_GAUCHE_ReadControlRegister\000"
  657      47415543 
- 657      48455F57 
- 657      72697465 
- 657      436F6E74 
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 16
+ 657      48455F52 
+ 657      65616443 
+ 657      6F6E7472 
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccIfBcOR.s 			page 16
 
 
- 658              	.LASF36:
- 659 0031 47656E65 		.ascii	"Generated_Source\\PSoC5\\PWM_GAUCHE_PM.c\000"
- 659      72617465 
- 659      645F536F 
- 659      75726365 
- 659      5C50536F 
- 660              	.LASF3:
- 661 0058 73686F72 		.ascii	"short unsigned int\000"
- 661      7420756E 
- 661      7369676E 
- 661      65642069 
- 661      6E7400
- 662              	.LASF11:
- 663 006b 666C6F61 		.ascii	"float\000"
- 663      7400
- 664              	.LASF28:
- 665 0071 50574D5F 		.ascii	"PWM_GAUCHE_ReadCounter\000"
- 665      47415543 
- 665      48455F52 
- 665      65616443 
- 665      6F756E74 
- 666              	.LASF1:
- 667 0088 756E7369 		.ascii	"unsigned char\000"
- 667      676E6564 
- 667      20636861 
- 667      7200
- 668              	.LASF35:
- 669 0096 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 669      43313120 
- 669      352E342E 
- 669      31203230 
- 669      31363036 
- 670 00c9 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 670      20726576 
- 670      6973696F 
- 670      6E203233 
- 670      37373135 
- 671 00fc 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 671      66756E63 
- 671      74696F6E 
- 671      2D736563 
- 671      74696F6E 
- 672              	.LASF29:
- 673 0124 50574D5F 		.ascii	"PWM_GAUCHE_ReadControlRegister\000"
- 673      47415543 
- 673      48455F52 
- 673      65616443 
- 673      6F6E7472 
- 674              	.LASF17:
- 675 0143 50574D45 		.ascii	"PWMEnableState\000"
- 675      6E61626C 
- 675      65537461 
- 675      746500
- 676              	.LASF5:
- 677 0152 6C6F6E67 		.ascii	"long unsigned int\000"
- 677      20756E73 
- 677      69676E65 
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 17
+ 658              	.LASF32:
+ 659 0030 50574D5F 		.ascii	"PWM_GAUCHE_WriteControlRegister\000"
+ 659      47415543 
+ 659      48455F57 
+ 659      72697465 
+ 659      436F6E74 
+ 660              	.LASF36:
+ 661 0050 47656E65 		.ascii	"Generated_Source\\PSoC5\\PWM_GAUCHE_PM.c\000"
+ 661      72617465 
+ 661      645F536F 
+ 661      75726365 
+ 661      5C50536F 
+ 662              	.LASF3:
+ 663 0077 73686F72 		.ascii	"short unsigned int\000"
+ 663      7420756E 
+ 663      7369676E 
+ 663      65642069 
+ 663      6E7400
+ 664              	.LASF11:
+ 665 008a 666C6F61 		.ascii	"float\000"
+ 665      7400
+ 666              	.LASF28:
+ 667 0090 50574D5F 		.ascii	"PWM_GAUCHE_ReadCounter\000"
+ 667      47415543 
+ 667      48455F52 
+ 667      65616443 
+ 667      6F756E74 
+ 668              	.LASF1:
+ 669 00a7 756E7369 		.ascii	"unsigned char\000"
+ 669      676E6564 
+ 669      20636861 
+ 669      7200
+ 670              	.LASF35:
+ 671 00b5 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 671      43313120 
+ 671      352E342E 
+ 671      31203230 
+ 671      31363036 
+ 672 00e8 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 672      20726576 
+ 672      6973696F 
+ 672      6E203233 
+ 672      37373135 
+ 673 011b 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 673      66756E63 
+ 673      74696F6E 
+ 673      2D736563 
+ 673      74696F6E 
+ 674              	.LASF37:
+ 675 0143 433A5C55 		.ascii	"C:\\Users\\gortz\\Desktop\\DE\\DIGIELEC\\Projet DIG"
+ 675      73657273 
+ 675      5C676F72 
+ 675      747A5C44 
+ 675      65736B74 
+ 676 0170 49454C45 		.ascii	"IELEC.cydsn\000"
+ 676      432E6379 
+ 676      64736E00 
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccIfBcOR.s 			page 17
 
 
- 677      6420696E 
- 677      7400
- 678              	.LASF9:
- 679 0164 75696E74 		.ascii	"uint8\000"
- 679      3800
- 680              	.LASF21:
- 681 016a 50574D43 		.ascii	"PWMControlRegister\000"
- 681      6F6E7472 
- 681      6F6C5265 
- 681      67697374 
- 681      657200
- 682              	.LASF37:
- 683 017d 433A5C55 		.ascii	"C:\\Users\\dorig\\Documents\\PSoC Creator\\Workspac"
- 683      73657273 
- 683      5C646F72 
- 683      69675C44 
- 683      6F63756D 
- 684 01ab 6530315C 		.ascii	"e01\\Projet DIGIELEC.cydsn\000"
- 684      50726F6A 
- 684      65742044 
- 684      49474945 
- 684      4C45432E 
- 685              	.LASF12:
- 686 01c5 646F7562 		.ascii	"double\000"
- 686      6C6500
- 687              	.LASF30:
- 688 01cc 50574D5F 		.ascii	"PWM_GAUCHE_WritePeriod\000"
- 688      47415543 
- 688      48455F57 
- 688      72697465 
- 688      50657269 
- 689              	.LASF23:
- 690 01e3 50574D5F 		.ascii	"PWM_GAUCHE_SaveConfig\000"
+ 677              	.LASF17:
+ 678 017c 50574D45 		.ascii	"PWMEnableState\000"
+ 678      6E61626C 
+ 678      65537461 
+ 678      746500
+ 679              	.LASF5:
+ 680 018b 6C6F6E67 		.ascii	"long unsigned int\000"
+ 680      20756E73 
+ 680      69676E65 
+ 680      6420696E 
+ 680      7400
+ 681              	.LASF9:
+ 682 019d 75696E74 		.ascii	"uint8\000"
+ 682      3800
+ 683              	.LASF21:
+ 684 01a3 50574D43 		.ascii	"PWMControlRegister\000"
+ 684      6F6E7472 
+ 684      6F6C5265 
+ 684      67697374 
+ 684      657200
+ 685              	.LASF23:
+ 686 01b6 50574D5F 		.ascii	"PWM_GAUCHE_SaveConfig\000"
+ 686      47415543 
+ 686      48455F53 
+ 686      61766543 
+ 686      6F6E6669 
+ 687              	.LASF12:
+ 688 01cc 646F7562 		.ascii	"double\000"
+ 688      6C6500
+ 689              	.LASF30:
+ 690 01d3 50574D5F 		.ascii	"PWM_GAUCHE_WritePeriod\000"
  690      47415543 
- 690      48455F53 
- 690      61766543 
- 690      6F6E6669 
+ 690      48455F57 
+ 690      72697465 
+ 690      50657269 
  691              	.LASF34:
- 692 01f9 50574D5F 		.ascii	"PWM_GAUCHE_Enable\000"
+ 692 01ea 50574D5F 		.ascii	"PWM_GAUCHE_Enable\000"
  692      47415543 
  692      48455F45 
  692      6E61626C 
  692      6500
  693              	.LASF31:
- 694 020b 50574D5F 		.ascii	"PWM_GAUCHE_WriteCounter\000"
+ 694 01fc 50574D5F 		.ascii	"PWM_GAUCHE_WriteCounter\000"
  694      47415543 
  694      48455F57 
  694      72697465 
  694      436F756E 
  695              	.LASF10:
- 696 0223 75696E74 		.ascii	"uint16\000"
+ 696 0214 75696E74 		.ascii	"uint16\000"
  696      313600
  697              	.LASF25:
- 698 022a 50574D5F 		.ascii	"PWM_GAUCHE_Sleep\000"
+ 698 021b 50574D5F 		.ascii	"PWM_GAUCHE_Sleep\000"
  698      47415543 
  698      48455F53 
  698      6C656570 
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 18
-
-
  698      00
  699              	.LASF8:
- 700 023b 756E7369 		.ascii	"unsigned int\000"
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccIfBcOR.s 			page 18
+
+
+ 700 022c 756E7369 		.ascii	"unsigned int\000"
  700      676E6564 
  700      20696E74 
  700      00
  701              	.LASF7:
- 702 0248 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 702 0239 6C6F6E67 		.ascii	"long long unsigned int\000"
  702      206C6F6E 
  702      6720756E 
  702      7369676E 
  702      65642069 
  703              	.LASF24:
- 704 025f 50574D5F 		.ascii	"PWM_GAUCHE_RestoreConfig\000"
+ 704 0250 50574D5F 		.ascii	"PWM_GAUCHE_RestoreConfig\000"
  704      47415543 
  704      48455F52 
  704      6573746F 
  704      7265436F 
  705              	.LASF14:
- 706 0278 72656738 		.ascii	"reg8\000"
+ 706 0269 72656738 		.ascii	"reg8\000"
  706      00
  707              	.LASF16:
- 708 027d 73697A65 		.ascii	"sizetype\000"
+ 708 026e 73697A65 		.ascii	"sizetype\000"
  708      74797065 
  708      00
  709              	.LASF6:
- 710 0286 6C6F6E67 		.ascii	"long long int\000"
+ 710 0277 6C6F6E67 		.ascii	"long long int\000"
  710      206C6F6E 
  710      6720696E 
  710      7400
  711              	.LASF27:
- 712 0294 50574D5F 		.ascii	"PWM_GAUCHE_ReadPeriod\000"
+ 712 0285 50574D5F 		.ascii	"PWM_GAUCHE_ReadPeriod\000"
  712      47415543 
  712      48455F52 
  712      65616450 
  712      6572696F 
  713              	.LASF33:
- 714 02aa 50574D5F 		.ascii	"PWM_GAUCHE_Stop\000"
+ 714 029b 50574D5F 		.ascii	"PWM_GAUCHE_Stop\000"
  714      47415543 
  714      48455F53 
  714      746F7000 
  715              	.LASF2:
- 716 02ba 73686F72 		.ascii	"short int\000"
+ 716 02ab 73686F72 		.ascii	"short int\000"
  716      7420696E 
  716      7400
  717              	.LASF38:
- 718 02c4 50574D5F 		.ascii	"PWM_GAUCHE_backup\000"
+ 718 02b5 50574D5F 		.ascii	"PWM_GAUCHE_backup\000"
  718      47415543 
  718      48455F62 
  718      61636B75 
  718      7000
  719              	.LASF4:
- 720 02d6 6C6F6E67 		.ascii	"long int\000"
+ 720 02c7 6C6F6E67 		.ascii	"long int\000"
  720      20696E74 
  720      00
  721              	.LASF13:
- 722 02df 63686172 		.ascii	"char\000"
-ARM GAS  C:\Users\dorig\AppData\Local\Temp\ccmN8yv1.s 			page 19
-
-
+ 722 02d0 63686172 		.ascii	"char\000"
  722      00
  723              	.LASF15:
- 724 02e4 6C6F6E67 		.ascii	"long double\000"
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccIfBcOR.s 			page 19
+
+
+ 724 02d5 6C6F6E67 		.ascii	"long double\000"
  724      20646F75 
  724      626C6500 
  725              	.LASF0:
- 726 02f0 7369676E 		.ascii	"signed char\000"
+ 726 02e1 7369676E 		.ascii	"signed char\000"
  726      65642063 
  726      68617200 
  727              	.LASF22:
- 728 02fc 50574D5F 		.ascii	"PWM_GAUCHE_backupStruct\000"
+ 728 02ed 50574D5F 		.ascii	"PWM_GAUCHE_backupStruct\000"
  728      47415543 
  728      48455F62 
  728      61636B75 
  728      70537472 
  729              	.LASF26:
- 730 0314 50574D5F 		.ascii	"PWM_GAUCHE_Wakeup\000"
+ 730 0305 50574D5F 		.ascii	"PWM_GAUCHE_Wakeup\000"
  730      47415543 
  730      48455F57 
  730      616B6575 
  730      7000
  731              	.LASF20:
- 732 0326 496E7465 		.ascii	"InterruptMaskValue\000"
+ 732 0317 496E7465 		.ascii	"InterruptMaskValue\000"
  732      72727570 
  732      744D6173 
  732      6B56616C 

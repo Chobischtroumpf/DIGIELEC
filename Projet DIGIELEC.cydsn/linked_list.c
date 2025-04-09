@@ -11,7 +11,8 @@
 */
 
 #include "linked_list.h"
-#include <cstddef>
+#include <stddef.h>
+#include <stdlib.h>
 
 semaphore_position get_rsemaphore(char content) {
     switch (content) {
@@ -115,7 +116,7 @@ semaphore_position get_lsemaphore(char content) {
  * - SHORT = dot (·), LONG= dash (−), END = end of character (|)
  * - The array is terminated with END.
  */
-get_morse_code(char content) {
+morse_code *get_morse_code(char content) {
     morse_code *code = (morse_code*) malloc(sizeof(morse_code) * 6);
 
     switch (content) {

@@ -42,4 +42,5 @@ t_charlist	*ft_lstnew(char content);
 semaphore_position get_lsemaphore(char content);
 semaphore_position get_rsemaphore(char content);
 morse_code *get_morse_code(char content);
+t_charlist *init_list(void);
 /* [] END OF FILE */

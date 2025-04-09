@@ -1,3 +1,3 @@
-# Component constraints for C:\Users\dorig\Documents\PSoC Creator\Workspace01\UART.cydsn\TopDesign\TopDesign.cysch
-# Project: C:\Users\dorig\Documents\PSoC Creator\Workspace01\UART.cydsn\UART.cyprj
-# Date: Wed, 02 Apr 2025 08:14:32 GMT
+# Component constraints for C:\Users\gortz\Desktop\DE\DIGIELEC\UART.cydsn\TopDesign\TopDesign.cysch
+# Project: C:\Users\gortz\Desktop\DE\DIGIELEC\UART.cydsn\UART.cyprj
+# Date: Wed, 09 Apr 2025 20:16:56 GMT
