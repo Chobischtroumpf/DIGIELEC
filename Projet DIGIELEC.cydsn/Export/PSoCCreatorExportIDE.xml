@@ -187,6 +187,12 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LCD_Char_1_LCDPort_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LCD_Char_1_LCDPort.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LCD_Char_1_LCDPort.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PIN_SERVO_2_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PIN_SERVO_2.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PIN_SERVO_2.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PIN_SERVO_1_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PIN_SERVO_1.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PIN_SERVO_1.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\gortz\Desktop\DE\DIGIELEC\Projet DIGIELEC.cydsn\Export\ARM_GCC_Generic">

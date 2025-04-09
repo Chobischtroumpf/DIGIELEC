@@ -1,4 +1,4 @@
---------------- Rebuild Started: 04/09/2025 22:16:52 Project: UART, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Rebuild Started: 04/10/2025 01:35:35 Project: UART, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 Deleting file ".\CortexM3\ARM_GCC_541\Debug\main.o"
 Deleting file ".\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o"
 Deleting file ".\CortexM3\ARM_GCC_541\Debug\cymetadata.o"
@@ -68,4 +68,4 @@ Checksum calculated and stored in ELF section .cymeta
 cyelftool.exe -S C:\Users\gortz\Desktop\DE\DIGIELEC\UART.cydsn\CortexM3\ARM_GCC_541\Debug\UART.elf
 Flash used: 1518 of 262144 bytes (0,6 %).
 SRAM used: 2505 of 65536 bytes (3,8 %). Stack: 2048 bytes. Heap: 128 bytes.
---------------- Rebuild Succeeded: 04/09/2025 22:17:04 ---------------
+--------------- Rebuild Succeeded: 04/10/2025 01:35:47 ---------------

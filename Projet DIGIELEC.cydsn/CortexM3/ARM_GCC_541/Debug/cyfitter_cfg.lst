@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
   29:Generated_Source\PSoC5/cyfitter_cfg.c **** 
   30:Generated_Source\PSoC5/cyfitter_cfg.c **** #if defined(__GNUC__) || defined(__ARMCC_VERSION)
   31:Generated_Source\PSoC5/cyfitter_cfg.c ****     #define CYPACKED 
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 2
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 2
 
 
   32:Generated_Source\PSoC5/cyfitter_cfg.c ****     #define CYPACKED_ATTR __attribute__ ((packed))
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
   86:Generated_Source\PSoC5/cyfitter_cfg.c **** 	(void)memcpy(dest, src, n);
   87:Generated_Source\PSoC5/cyfitter_cfg.c **** }
   88:Generated_Source\PSoC5/cyfitter_cfg.c **** CY_CFG_UNUSED
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 3
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 3
 
 
   89:Generated_Source\PSoC5/cyfitter_cfg.c **** static void CYCONFIGCPYCODE(void *dest, const void *src, size_t n);
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
   41              		.thumb
   42              		.thumb_func
   43              		.type	cfg_write_bytes32, %function
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 4
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 4
 
 
   44              	cfg_write_bytes32:
@@ -205,7 +205,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  148:Generated_Source\PSoC5/cyfitter_cfg.c **** }
  149:Generated_Source\PSoC5/cyfitter_cfg.c **** #endif
  150:Generated_Source\PSoC5/cyfitter_cfg.c **** 
- 151:Generated_Source\PSoC5/cyfitter_cfg.c **** #define CY_CFG_BASE_ADDR_COUNT 25u
+ 151:Generated_Source\PSoC5/cyfitter_cfg.c **** #define CY_CFG_BASE_ADDR_COUNT 24u
  152:Generated_Source\PSoC5/cyfitter_cfg.c **** CYPACKED typedef struct
  153:Generated_Source\PSoC5/cyfitter_cfg.c **** {
  154:Generated_Source\PSoC5/cyfitter_cfg.c **** 	uint8 offset;
@@ -213,32 +213,32 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  156:Generated_Source\PSoC5/cyfitter_cfg.c **** } CYPACKED_ATTR cy_cfg_addrvalue_t;
  157:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  158:Generated_Source\PSoC5/cyfitter_cfg.c **** #define cy_cfg_addr_table ((const uint32 CYFAR *)0x48000000u)
- 159:Generated_Source\PSoC5/cyfitter_cfg.c **** #define cy_cfg_data_table ((const cy_cfg_addrvalue_t CYFAR *)0x48000064u)
+ 159:Generated_Source\PSoC5/cyfitter_cfg.c **** #define cy_cfg_data_table ((const cy_cfg_addrvalue_t CYFAR *)0x48000060u)
  160:Generated_Source\PSoC5/cyfitter_cfg.c **** 
- 161:Generated_Source\PSoC5/cyfitter_cfg.c **** /* UDB_0_0_1_CONFIG Address: CYDEV_UCFG_B1_P5_U1_BASE Size (bytes): 128 */
- 162:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_UDB_0_0_1_CONFIG_VAL ((const uint8 CYFAR *)0x480004D8u)
+ 161:Generated_Source\PSoC5/cyfitter_cfg.c **** /* UDB_0_1_0_CONFIG Address: CYDEV_UCFG_B1_P4_U1_BASE Size (bytes): 128 */
+ 162:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_UDB_0_1_0_CONFIG_VAL ((const uint8 CYFAR *)0x4800055Cu)
  163:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  164:Generated_Source\PSoC5/cyfitter_cfg.c **** /* IOPINS0_0 Address: CYREG_PRT0_DM0 Size (bytes): 8 */
- 165:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_0_VAL ((const uint8 CYFAR *)0x48000558u)
+ 165:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_0_VAL ((const uint8 CYFAR *)0x480005DCu)
  166:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  167:Generated_Source\PSoC5/cyfitter_cfg.c **** /* IOPINS0_7 Address: CYREG_PRT12_DM0 Size (bytes): 8 */
- 168:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_7_VAL ((const uint8 CYFAR *)0x48000560u)
+ 168:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_7_VAL ((const uint8 CYFAR *)0x480005E4u)
  169:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  170:Generated_Source\PSoC5/cyfitter_cfg.c **** /* IOPINS0_8 Address: CYREG_PRT15_DR Size (bytes): 10 */
- 171:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_8_VAL ((const uint8 CYFAR *)0x48000568u)
+ 171:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_8_VAL ((const uint8 CYFAR *)0x480005ECu)
  172:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  173:Generated_Source\PSoC5/cyfitter_cfg.c **** /* IOPINS0_1 Address: CYREG_PRT1_DM0 Size (bytes): 8 */
- 174:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_1_VAL ((const uint8 CYFAR *)0x48000574u)
+ 174:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_1_VAL ((const uint8 CYFAR *)0x480005F8u)
  175:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  176:Generated_Source\PSoC5/cyfitter_cfg.c **** /* IOPINS0_2 Address: CYREG_PRT2_DR Size (bytes): 10 */
- 177:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_2_VAL ((const uint8 CYFAR *)0x4800057Cu)
+ 177:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_2_VAL ((const uint8 CYFAR *)0x48000600u)
  178:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  179:Generated_Source\PSoC5/cyfitter_cfg.c **** /* IOPINS0_3 Address: CYREG_PRT3_DR Size (bytes): 10 */
- 180:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_3_VAL ((const uint8 CYFAR *)0x48000588u)
+ 180:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_3_VAL ((const uint8 CYFAR *)0x4800060Cu)
  181:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  182:Generated_Source\PSoC5/cyfitter_cfg.c **** /* CYDEV_CLKDIST_ACFG0_CFG0 Address: CYREG_CLKDIST_ACFG0_CFG0 Size (bytes): 4 */
- 183:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_CYDEV_CLKDIST_ACFG0_CFG0_VAL ((const uint8 CYFAR *)0x48000594u)
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 5
+ 183:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_CYDEV_CLKDIST_ACFG0_CFG0_VAL ((const uint8 CYFAR *)0x48000618u)
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 5
 
 
  184:Generated_Source\PSoC5/cyfitter_cfg.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
   74              		.loc 1 209 0
   75 000e 26F0FF06 		bic	r6, r6, #255
   76              	.LVL6:
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 6
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 6
 
 
  210:Generated_Source\PSoC5/cyfitter_cfg.c **** 		while (count != 0u)
@@ -335,7 +335,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  101              	.L4:
  205:Generated_Source\PSoC5/cyfitter_cfg.c **** 	{
  102              		.loc 1 205 0 is_stmt 0 discriminator 1
- 103 002c 182F     		cmp	r7, #24
+ 103 002c 172F     		cmp	r7, #23
  104 002e EBD9     		bls	.L7
  215:Generated_Source\PSoC5/cyfitter_cfg.c **** 		}
  216:Generated_Source\PSoC5/cyfitter_cfg.c **** 	}
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  120              		.thumb_func
  121              		.type	AnalogSetDefault, %function
  122              	AnalogSetDefault:
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 7
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 7
 
 
  123              	.LFB6:
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  271:Generated_Source\PSoC5/cyfitter_cfg.c **** 		CyDelayCycles(10u * 48u); /* Delay 10us based on 48MHz clock */
  272:Generated_Source\PSoC5/cyfitter_cfg.c **** 	}
  273:Generated_Source\PSoC5/cyfitter_cfg.c **** 	/* If we ran out of time the PLL didn't lock so go to the error function */
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 8
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 8
 
 
  274:Generated_Source\PSoC5/cyfitter_cfg.c **** 	if (timeout == 0u)
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  135 0006 03F00701 		and	r1, r3, #7
  136 000a 0C4A     		ldr	r2, .L10+4
  137 000c 1170     		strb	r1, [r2]
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 9
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 9
 
 
  317:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_BG_DFT1), ((bg_xover_inl_trim >> 4) & 0x0Fu));
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  185              		.cfi_def_cfa_offset 8
  186              		.cfi_offset 3, -8
  187              		.cfi_offset 14, -4
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 10
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 10
 
 
   79:Generated_Source\PSoC5/cyfitter_cfg.c **** }
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  243:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_CLKDIST_DCFG0_CFG0 + 0x2u), 0x18u);
  238              		.loc 1 243 0
  239 0002 1322     		movs	r2, #19
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 11
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 11
 
 
  240 0004 344B     		ldr	r3, .L22
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  283 0048 03F50073 		add	r3, r3, #512
  284 004c 1970     		strb	r1, [r3]
  261:Generated_Source\PSoC5/cyfitter_cfg.c **** 
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 12
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 12
 
 
  285              		.loc 1 261 0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  329 008a 0320     		movs	r0, #3
  330 008c FFF7FEFF 		bl	CyClockStartupError
  331              	.LVL26:
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 13
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 13
 
 
  332              	.L20:
@@ -778,12 +778,12 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  376 00d6 00BF     		.align	2
  377              	.L22:
  378 00d8 80400040 		.word	1073758336
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 14
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 14
 
 
  379 00dc 82400040 		.word	1073758338
  380 00e0 86400040 		.word	1073758342
- 381 00e4 94050048 		.word	1207960980
+ 381 00e4 18060048 		.word	1207961112
  382 00e8 00410040 		.word	1073758464
  383 00ec 00430040 		.word	1073758976
  384 00f0 08010049 		.word	1224737032
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  410 0002 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  411 0004 DBB2     		uxtb	r3, r3
  412              	.LVL29:
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 15
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 15
 
 
  346:Generated_Source\PSoC5/cyfitter_cfg.c **** 	if (enabled != 0u)
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  370:Generated_Source\PSoC5/cyfitter_cfg.c **** 	0x00u, 
  371:Generated_Source\PSoC5/cyfitter_cfg.c **** };
  372:Generated_Source\PSoC5/cyfitter_cfg.c **** 
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 16
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 16
 
 
  373:Generated_Source\PSoC5/cyfitter_cfg.c **** /*******************************************************************************
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  392:Generated_Source\PSoC5/cyfitter_cfg.c **** }
  393:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  394:Generated_Source\PSoC5/cyfitter_cfg.c **** /*******************************************************************************
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 17
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 17
 
 
  395:Generated_Source\PSoC5/cyfitter_cfg.c **** * Function Name: ADC_POTENTIOMETRE_AMux_Unset
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  414:Generated_Source\PSoC5/cyfitter_cfg.c **** }
  415:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  416:Generated_Source\PSoC5/cyfitter_cfg.c **** 
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 18
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 18
 
 
  417:Generated_Source\PSoC5/cyfitter_cfg.c **** 
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  447:Generated_Source\PSoC5/cyfitter_cfg.c **** 		CYPACKED typedef struct {
  448:Generated_Source\PSoC5/cyfitter_cfg.c **** 			void CYFAR *address;
  449:Generated_Source\PSoC5/cyfitter_cfg.c **** 			uint16 size;
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 19
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 19
 
 
  450:Generated_Source\PSoC5/cyfitter_cfg.c **** 		} CYPACKED_ATTR cfg_memset_t;
@@ -1095,8 +1095,8 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  461:Generated_Source\PSoC5/cyfitter_cfg.c **** 			{(void CYFAR *)(CYREG_TMR0_CFG0), 12u},
  462:Generated_Source\PSoC5/cyfitter_cfg.c **** 			{(void CYFAR *)(CYREG_PRT4_DR), 48u},
  463:Generated_Source\PSoC5/cyfitter_cfg.c **** 			{(void CYFAR *)(CYDEV_UCFG_B0_P0_U0_BASE), 4096u},
- 464:Generated_Source\PSoC5/cyfitter_cfg.c **** 			{(void CYFAR *)(CYDEV_UCFG_B1_P2_U0_BASE), 1664u},
- 465:Generated_Source\PSoC5/cyfitter_cfg.c **** 			{(void CYFAR *)(CYDEV_UCFG_B1_P5_ROUTE_BASE), 256u},
+ 464:Generated_Source\PSoC5/cyfitter_cfg.c **** 			{(void CYFAR *)(CYDEV_UCFG_B1_P2_U0_BASE), 1152u},
+ 465:Generated_Source\PSoC5/cyfitter_cfg.c **** 			{(void CYFAR *)(CYDEV_UCFG_B1_P4_ROUTE_BASE), 768u},
  466:Generated_Source\PSoC5/cyfitter_cfg.c **** 			{(void CYFAR *)(CYDEV_UCFG_DSI0_BASE), 2560u},
  467:Generated_Source\PSoC5/cyfitter_cfg.c **** 			{(void CYFAR *)(CYDEV_UCFG_DSI12_BASE), 512u},
  468:Generated_Source\PSoC5/cyfitter_cfg.c **** 			{(void CYFAR *)(CYREG_BCTL0_MDCLK_EN), 32u},
@@ -1104,7 +1104,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  470:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  471:Generated_Source\PSoC5/cyfitter_cfg.c **** 		static const cfg_memcpy_t CYCODE cfg_memcpy_list [] = {
  472:Generated_Source\PSoC5/cyfitter_cfg.c **** 			/* dest, src, size */
- 473:Generated_Source\PSoC5/cyfitter_cfg.c **** 			{(void CYFAR *)(CYDEV_UCFG_B1_P5_U1_BASE), BS_UDB_0_0_1_CONFIG_VAL, 128u},
+ 473:Generated_Source\PSoC5/cyfitter_cfg.c **** 			{(void CYFAR *)(CYDEV_UCFG_B1_P4_U1_BASE), BS_UDB_0_1_0_CONFIG_VAL, 128u},
  474:Generated_Source\PSoC5/cyfitter_cfg.c **** 		};
  475:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  476:Generated_Source\PSoC5/cyfitter_cfg.c **** 		uint8 CYDATA i;
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  557              	.LVL39:
  558 0028 E4B2     		uxtb	r4, r4
  559              	.LVL40:
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 20
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 20
 
 
  560              	.L38:
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  598 0054 FFF7FEFF 		bl	cfg_write_bytes32
  599              	.LVL49:
  496:Generated_Source\PSoC5/cyfitter_cfg.c **** 
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 21
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 21
 
 
  497:Generated_Source\PSoC5/cyfitter_cfg.c **** 		/* Perform normal device configuration. Order is not critical for these items. */
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  638              	.LVL52:
  513:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CYCONFIGCPY((void CYFAR *)(CYREG_PRT15_DR), (const void CYFAR *)(BS_IOPINS0_8_VAL), 10u);
  639              		.loc 1 513 0
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 22
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 22
 
 
  640 009e 2246     		mov	r2, r4
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  681 00e2 1A70     		strb	r2, [r3]
  527:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  528:Generated_Source\PSoC5/cyfitter_cfg.c **** 	/* Perform basic analog initialization to defaults */
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 23
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 23
 
 
  529:Generated_Source\PSoC5/cyfitter_cfg.c **** 	AnalogSetDefault();
@@ -1340,21 +1340,21 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  694              	.L43:
  695 00f4 E8460040 		.word	1073759976
  696 00f8 00000000 		.word	.LANCHOR0
- 697 00fc 64000048 		.word	1207959652
+ 697 00fc 60000048 		.word	1207959648
  698 0100 83580040 		.word	1073764483
  699 0104 03500140 		.word	1073827843
  700 0108 A0430040 		.word	1073759136
- 701 010c 58050048 		.word	1207960920
+ 701 010c DC050048 		.word	1207961052
  702 0110 02510040 		.word	1073762562
- 703 0114 60050048 		.word	1207960928
+ 703 0114 E4050048 		.word	1207961060
  704 0118 C2510040 		.word	1073762754
- 705 011c 68050048 		.word	1207960936
+ 705 011c EC050048 		.word	1207961068
  706 0120 F0510040 		.word	1073762800
- 707 0124 74050048 		.word	1207960948
+ 707 0124 F8050048 		.word	1207961080
  708 0128 12510040 		.word	1073762578
- 709 012c 7C050048 		.word	1207960956
+ 709 012c 00060048 		.word	1207961088
  710 0130 20510040 		.word	1073762592
- 711 0134 88050048 		.word	1207960968
+ 711 0134 0C060048 		.word	1207961100
  712 0138 30510040 		.word	1073762608
  713 013c 22430040 		.word	1073759010
  714 0140 00480040 		.word	1073760256
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  732              	ADC_POTENTIOMETRE_AMux__maskTable:
  733 0008 40       		.byte	64
  734 0009 00       		.byte	0
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 24
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 24
 
 
  735 000a 0000     		.space	2
@@ -1392,9 +1392,9 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  743 0018 00000140 		.word	1073807360
  744 001c 0010     		.short	4096
  745 001e 00140140 		.4byte	1073812480
- 746 0022 8006     		.short	1664
- 747 0024 001B0140 		.word	1073814272
- 748 0028 0001     		.short	256
+ 746 0022 8004     		.short	1152
+ 747 0024 00190140 		.word	1073813760
+ 748 0028 0003     		.short	768
  749 002a 00400140 		.4byte	1073823744
  750 002e 000A     		.short	2560
  751 0030 004C0140 		.word	1073826816
@@ -1404,8 +1404,8 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  755              		.type	cfg_memcpy_list.5033, %object
  756              		.size	cfg_memcpy_list.5033, 10
  757              	cfg_memcpy_list.5033:
- 758 003c 801A0140 		.word	1073814144
- 759 0040 D8040048 		.word	1207960792
+ 758 003c 80180140 		.word	1073813632
+ 759 0040 5C050048 		.word	1207960924
  760 0044 8000     		.short	128
  761              		.text
  762              	.Letext0:
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  789 0037 04       		.uleb128 0x4
  790 0038 04       		.byte	0x4
  791 0039 07       		.byte	0x7
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 25
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 25
 
 
  792 003a 2B010000 		.4byte	.LASF0
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  846 009e 03       		.byte	0x3
  847 009f E901     		.2byte	0x1e9
  848 00a1 61000000 		.4byte	0x61
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 26
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 26
 
 
  849 00a5 06       		.uleb128 0x6
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  903 0114 00000000 		.4byte	.LFB3
  904 0118 02000000 		.4byte	.LFE3-.LFB3
  905 011c 01       		.uleb128 0x1
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 27
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 27
 
 
  906 011d 9C       		.byte	0x9c
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  960 0191 0F       		.uleb128 0xf
  961 0192 00000000 		.4byte	.LASF27
  962 0196 01       		.byte	0x1
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 28
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 28
 
 
  963 0197 D0       		.byte	0xd0
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  1017 0213 BB060000 		.4byte	0x6bb
  1018 0217 16       		.uleb128 0x16
  1019 0218 01       		.uleb128 0x1
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 29
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 29
 
 
  1020 0219 50       		.byte	0x50
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  1074 027a 01       		.uleb128 0x1
  1075 027b 50       		.byte	0x50
  1076 027c 16       		.uleb128 0x16
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 30
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 30
 
 
  1077 027d 01       		.uleb128 0x1
@@ -1796,9 +1796,9 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  1129 02de 51       		.byte	0x51
  1130 02df 05       		.uleb128 0x5
  1131 02e0 0C       		.byte	0xc
- 1132 02e1 94050048 		.4byte	0x48000594
+ 1132 02e1 18060048 		.4byte	0x48000618
  1133 02e5 16       		.uleb128 0x16
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 31
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 31
 
 
  1134 02e6 01       		.uleb128 0x1
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  1188 034b 00000000 		.4byte	.LFB8
  1189 034f 1C000000 		.4byte	.LFE8-.LFB8
  1190 0353 01       		.uleb128 0x1
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 32
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 32
 
 
  1191 0354 9C       		.byte	0x9c
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  1245 03d6 04       		.byte	0x4
  1246 03d7 00       		.byte	0
  1247 03d8 06       		.uleb128 0x6
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 33
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 33
 
 
  1248 03d9 A7010000 		.4byte	.LASF46
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  1302 0452 5D040000 		.4byte	0x45d
  1303 0456 23       		.uleb128 0x23
  1304 0457 7D000000 		.4byte	0x7d
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 34
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 34
 
 
  1305 045b 00       		.byte	0
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  1359 04c7 0A       		.byte	0xa
  1360 04c8 FFFF     		.2byte	0xffff
  1361 04ca 1A       		.byte	0x1a
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 35
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 35
 
 
  1362 04cb 00       		.byte	0
@@ -2098,12 +2098,12 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  1416 0540 16       		.uleb128 0x16
  1417 0541 01       		.uleb128 0x1
  1418 0542 51       		.byte	0x51
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 36
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 36
 
 
  1419 0543 05       		.uleb128 0x5
  1420 0544 0C       		.byte	0xc
- 1421 0545 64000048 		.4byte	0x48000064
+ 1421 0545 60000048 		.4byte	0x48000060
  1422 0549 00       		.byte	0
  1423 054a 00       		.byte	0
  1424 054b 19       		.uleb128 0x19
@@ -2121,7 +2121,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  1436 0563 51       		.byte	0x51
  1437 0564 05       		.uleb128 0x5
  1438 0565 0C       		.byte	0xc
- 1439 0566 58050048 		.4byte	0x48000558
+ 1439 0566 DC050048 		.4byte	0x480005dc
  1440 056a 16       		.uleb128 0x16
  1441 056b 01       		.uleb128 0x1
  1442 056c 52       		.byte	0x52
@@ -2143,7 +2143,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  1458 0588 51       		.byte	0x51
  1459 0589 05       		.uleb128 0x5
  1460 058a 0C       		.byte	0xc
- 1461 058b 60050048 		.4byte	0x48000560
+ 1461 058b E4050048 		.4byte	0x480005e4
  1462 058f 16       		.uleb128 0x16
  1463 0590 01       		.uleb128 0x1
  1464 0591 52       		.byte	0x52
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  1473 05a3 01       		.uleb128 0x1
  1474 05a4 50       		.byte	0x50
  1475 05a5 05       		.uleb128 0x5
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 37
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 37
 
 
  1476 05a6 0C       		.byte	0xc
@@ -2168,7 +2168,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  1480 05ad 51       		.byte	0x51
  1481 05ae 05       		.uleb128 0x5
  1482 05af 0C       		.byte	0xc
- 1483 05b0 68050048 		.4byte	0x48000568
+ 1483 05b0 EC050048 		.4byte	0x480005ec
  1484 05b4 16       		.uleb128 0x16
  1485 05b5 01       		.uleb128 0x1
  1486 05b6 52       		.byte	0x52
@@ -2191,7 +2191,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  1503 05d3 51       		.byte	0x51
  1504 05d4 05       		.uleb128 0x5
  1505 05d5 0C       		.byte	0xc
- 1506 05d6 74050048 		.4byte	0x48000574
+ 1506 05d6 F8050048 		.4byte	0x480005f8
  1507 05da 16       		.uleb128 0x16
  1508 05db 01       		.uleb128 0x1
  1509 05dc 52       		.byte	0x52
@@ -2213,12 +2213,12 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  1525 05f8 51       		.byte	0x51
  1526 05f9 05       		.uleb128 0x5
  1527 05fa 0C       		.byte	0xc
- 1528 05fb 7C050048 		.4byte	0x4800057c
+ 1528 05fb 00060048 		.4byte	0x48000600
  1529 05ff 16       		.uleb128 0x16
  1530 0600 01       		.uleb128 0x1
  1531 0601 52       		.byte	0x52
  1532 0602 02       		.uleb128 0x2
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 38
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 38
 
 
  1533 0603 74       		.byte	0x74
@@ -2239,7 +2239,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  1548 061e 51       		.byte	0x51
  1549 061f 05       		.uleb128 0x5
  1550 0620 0C       		.byte	0xc
- 1551 0621 88050048 		.4byte	0x48000588
+ 1551 0621 0C060048 		.4byte	0x4800060c
  1552 0625 16       		.uleb128 0x16
  1553 0626 01       		.uleb128 0x1
  1554 0627 52       		.byte	0x52
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  1587 065d 22       		.uleb128 0x22
  1588 065e 73060000 		.4byte	0x673
  1589 0662 6D060000 		.4byte	0x66d
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 39
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 39
 
 
  1590 0666 23       		.uleb128 0x23
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  1644 0002 01       		.byte	0x1
  1645 0003 25       		.uleb128 0x25
  1646 0004 0E       		.uleb128 0xe
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 40
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 40
 
 
  1647 0005 13       		.uleb128 0x13
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  1701 003b 00       		.byte	0
  1702 003c 00       		.byte	0
  1703 003d 06       		.uleb128 0x6
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 41
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 41
 
 
  1704 003e 16       		.uleb128 0x16
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  1758 0074 3B       		.uleb128 0x3b
  1759 0075 0B       		.uleb128 0xb
  1760 0076 27       		.uleb128 0x27
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 42
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 42
 
 
  1761 0077 19       		.uleb128 0x19
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  1815 00b0 34       		.uleb128 0x34
  1816 00b1 00       		.byte	0
  1817 00b2 03       		.uleb128 0x3
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 43
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 43
 
 
  1818 00b3 08       		.uleb128 0x8
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  1872 00e9 03       		.uleb128 0x3
  1873 00ea 0E       		.uleb128 0xe
  1874 00eb 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 44
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 44
 
 
  1875 00ec 0B       		.uleb128 0xb
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  1929 0125 00       		.byte	0
  1930 0126 00       		.byte	0
  1931 0127 16       		.uleb128 0x16
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 45
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 45
 
 
  1932 0128 8A8201   		.uleb128 0x410a
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  1986 0163 12       		.uleb128 0x12
  1987 0164 06       		.uleb128 0x6
  1988 0165 40       		.uleb128 0x40
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 46
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 46
 
 
  1989 0166 18       		.uleb128 0x18
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  2043 019d 01       		.byte	0x1
  2044 019e 11       		.uleb128 0x11
  2045 019f 01       		.uleb128 0x1
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 47
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 47
 
 
  2046 01a0 12       		.uleb128 0x12
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  2100 01d6 01       		.uleb128 0x1
  2101 01d7 13       		.uleb128 0x13
  2102 01d8 00       		.byte	0
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 48
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 48
 
 
  2103 01d9 00       		.byte	0
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  2157 0211 3F       		.uleb128 0x3f
  2158 0212 19       		.uleb128 0x19
  2159 0213 3C       		.uleb128 0x3c
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 49
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 49
 
 
  2160 0214 19       		.uleb128 0x19
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  2214 0046 0100     		.2byte	0x1
  2215 0048 56       		.byte	0x56
  2216 0049 00000000 		.4byte	0
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 50
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 50
 
 
  2217 004d 00000000 		.4byte	0
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  2271 00d7 0100     		.2byte	0x1
  2272 00d9 50       		.byte	0x50
  2273 00da 05000000 		.4byte	.LVL18-1
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 51
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 51
 
 
  2274 00de 08000000 		.4byte	.LFE1
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  2328 015d 68000000 		.4byte	.LVL21
  2329 0161 74000000 		.4byte	.LVL22
  2330 0165 0100     		.2byte	0x1
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 52
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 52
 
 
  2331 0167 54       		.byte	0x54
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  2385 01ee 5A000000 		.4byte	.LVL50
  2386 01f2 0100     		.2byte	0x1
  2387 01f4 54       		.byte	0x54
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 53
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 53
 
 
  2388 01f5 00000000 		.4byte	0
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  2442 0265 45000000 		.4byte	.LVL46-1
  2443 0269 0100     		.2byte	0x1
  2444 026b 50       		.byte	0x50
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 54
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 54
 
 
  2445 026c 00000000 		.4byte	0
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  2499 0010 00000000 		.4byte	.LFB6
  2500 0014 44000000 		.4byte	.LFE6
  2501 0018 00000000 		.4byte	.LFB0
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 55
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 55
 
 
  2502 001c 0C000000 		.4byte	.LFE0
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  2535      6C6500
  2536              	.LASF42:
  2537 005e 4144435F 		.ascii	"ADC_POTENTIOMETRE_AMux_Unset\000"
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 56
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 56
 
 
  2537      504F5445 
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  2563 00fa 75696E74 		.ascii	"uint32\000"
  2563      333200
  2564              	.LASF40:
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 57
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 57
 
 
  2565 0101 4144435F 		.ascii	"ADC_POTENTIOMETRE_AMux_Set\000"
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  2589      6F766572 
  2589      5F696E6C 
  2589      5F747269 
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 58
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 58
 
 
  2589      6D00
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  2613 0290 706C6C4C 		.ascii	"pllLock\000"
  2613      6F636B00 
  2614              	.LASF41:
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 59
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 59
 
 
  2615 0298 6368616E 		.ascii	"channel\000"
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 1
  2640      4E54494F 
  2640      4D455452 
  2640      455F414D 
-ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccJvjfyx.s 			page 60
+ARM GAS  C:\Users\gortz\AppData\Local\Temp\ccsqPlHR.s 			page 60
 
 
  2641              	.LASF49:

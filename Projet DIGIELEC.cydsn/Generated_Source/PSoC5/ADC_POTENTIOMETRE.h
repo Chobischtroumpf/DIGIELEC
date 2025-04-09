@@ -1380,7 +1380,7 @@ extern volatile int32 ADC_POTENTIOMETRE_CountsPerVolt;
 #define ADC_POTENTIOMETRE_CFG1_DSM_CR16           (0x19u)
 #define ADC_POTENTIOMETRE_CFG1_DSM_CR17           (0x97u)
 #define ADC_POTENTIOMETRE_CFG1_DSM_REF0           (0x52u)
-#define ADC_POTENTIOMETRE_CFG1_DSM_REF1           (0x01u)
+#define ADC_POTENTIOMETRE_CFG1_DSM_REF1           (0x00u)
 #define ADC_POTENTIOMETRE_CFG1_DSM_REF2           (0x58u)
 #define ADC_POTENTIOMETRE_CFG1_DSM_REF3           (0x00u)
 #define ADC_POTENTIOMETRE_CFG1_DSM_DEM0           (0x04u)

@@ -226,8 +226,8 @@ void PWM_GAUCHE_RestoreConfig(void) ;
 /***************************************
 *         Initialization Values
 **************************************/
-#define PWM_GAUCHE_INIT_PERIOD_VALUE          (59999u)
-#define PWM_GAUCHE_INIT_COMPARE_VALUE1        (2400u)
+#define PWM_GAUCHE_INIT_PERIOD_VALUE          (24000u)
+#define PWM_GAUCHE_INIT_COMPARE_VALUE1        (1200u)
 #define PWM_GAUCHE_INIT_COMPARE_VALUE2        (63u)
 #define PWM_GAUCHE_INIT_INTERRUPTS_MODE       (uint8)(((uint8)(0u <<   \
                                                     PWM_GAUCHE_STATUS_TC_INT_EN_MASK_SHIFT)) | \

@@ -1,5 +1,5 @@
 # Projet DIGIELEC
-# 2025-04-09 20:17:11Z
+# 2025-04-09 23:40:16Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -33,5 +33,7 @@ set_io "\LCD_Char_1:LCDPort(3)\" iocell 2 3
 set_io "\LCD_Char_1:LCDPort(4)\" iocell 2 4
 set_io "\LCD_Char_1:LCDPort(5)\" iocell 2 5
 set_io "\LCD_Char_1:LCDPort(6)\" iocell 2 6
+set_io "PIN_SERVO_2(0)" iocell 1 5
+set_io "PIN_SERVO_1(0)" iocell 1 4
 set_location "\VDAC:viDAC8\" vidaccell -1 -1 0
 set_location "\ADC_POTENTIOMETRE:DSM\" dsmodcell -1 -1 0

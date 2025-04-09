@@ -1,7 +1,8 @@
-C:\Users\gortz\Desktop\DE\DIGIELEC\Projet DIGIELEC.cydsn\Projet DIGIELEC.cyprj|1ca09acc-0e61-4df2-b2ac-288b5ba147c2
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|bdab3f9d-e653-4970-8efa-7490eeeb35c4
-C:\Users\gortz\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|c95519ef-86da-45eb-804e-258113a814c0
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|e9681277-acf4-42ee-8bdd-f78bd27796af
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|36a633ac-3b30-43ea-b8a8-1711e1b6af16
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|33e04d30-e2d8-4f2e-99de-71b8279cdab2
-C:\Users\gortz\Desktop\DE\DIGIELEC\UART.cydsn\UART.cyprj|93f08375-b95f-4554-809d-fba294b438de
+C:\Users\gortz\Desktop\DE\DIGIELEC\Projet DIGIELEC.cydsn\Projet DIGIELEC.cyprj|ad74887d-217b-4aac-85f6-0c915650bc7c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|69cb410f-e7a8-4394-88ab-9461426af700
+C:\Users\gortz\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|5432c054-a4c2-42bf-910d-53d69ad94fbe
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|5c16bd04-8083-485c-b2e9-307a47e4d0dc
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|84569b3e-282b-4bf8-a03e-304b2a016a72
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|153b7017-4a76-4c67-8820-c23a084fd3ba
+C:\Users\gortz\Desktop\DE\DIGIELEC\UART.cydsn\UART.cyprj|0789c99b-4cb7-47ca-bbb3-14798a80a2a8
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc3\AnalogDevice\PSoC35AnalogDevice.cylib\PSoC35AnalogDevice.cyprj|002eb4ae-5144-4da8-8cc5-cbb5c320c336

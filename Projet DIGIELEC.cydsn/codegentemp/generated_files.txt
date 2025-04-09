@@ -97,6 +97,12 @@
   <file name="C:\Users\gortz\Desktop\DE\DIGIELEC\Projet DIGIELEC.cydsn\codegentemp\LCD_Char_1.c" value="SOURCE_C;CortexM3;;;;LCD_Char_1" />
   <file name="C:\Users\gortz\Desktop\DE\DIGIELEC\Projet DIGIELEC.cydsn\codegentemp\LCD_Char_1.h" value="HEADER;;;;;LCD_Char_1" />
   <file name="C:\Users\gortz\Desktop\DE\DIGIELEC\Projet DIGIELEC.cydsn\codegentemp\LCD_Char_1_PM.c" value="SOURCE_C;CortexM3;;;;LCD_Char_1" />
+  <file name="C:\Users\gortz\Desktop\DE\DIGIELEC\Projet DIGIELEC.cydsn\codegentemp\PIN_SERVO_2_aliases.h" value="HEADER;;;;;PIN_SERVO_2" />
+  <file name="C:\Users\gortz\Desktop\DE\DIGIELEC\Projet DIGIELEC.cydsn\codegentemp\PIN_SERVO_2.c" value="SOURCE_C;CortexM3;;;;PIN_SERVO_2" />
+  <file name="C:\Users\gortz\Desktop\DE\DIGIELEC\Projet DIGIELEC.cydsn\codegentemp\PIN_SERVO_2.h" value="HEADER;;;;;PIN_SERVO_2" />
+  <file name="C:\Users\gortz\Desktop\DE\DIGIELEC\Projet DIGIELEC.cydsn\codegentemp\PIN_SERVO_1_aliases.h" value="HEADER;;;;;PIN_SERVO_1" />
+  <file name="C:\Users\gortz\Desktop\DE\DIGIELEC\Projet DIGIELEC.cydsn\codegentemp\PIN_SERVO_1.c" value="SOURCE_C;CortexM3;;;;PIN_SERVO_1" />
+  <file name="C:\Users\gortz\Desktop\DE\DIGIELEC\Projet DIGIELEC.cydsn\codegentemp\PIN_SERVO_1.h" value="HEADER;;;;;PIN_SERVO_1" />
   <file name="C:\Users\gortz\Desktop\DE\DIGIELEC\Projet DIGIELEC.cydsn\codegentemp\UART_1_IntClock.c" value="SOURCE_C;CortexM3;;;;UART_1_IntClock" />
   <file name="C:\Users\gortz\Desktop\DE\DIGIELEC\Projet DIGIELEC.cydsn\codegentemp\UART_1_IntClock.h" value="HEADER;;;;;UART_1_IntClock" />
   <file name="C:\Users\gortz\Desktop\DE\DIGIELEC\Projet DIGIELEC.cydsn\codegentemp\ADC_POTENTIOMETRE_AMux.c" value="SOURCE_C;CortexM3;;;;ADC_POTENTIOMETRE_AMux" />

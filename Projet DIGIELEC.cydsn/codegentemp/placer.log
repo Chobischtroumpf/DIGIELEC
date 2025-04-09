@@ -6,7 +6,7 @@
 
 #Build Date:         Sep  9 2019 11:47:43
 
-#File Generated:     Apr 9 2025 22:17:11
+#File Generated:     Apr 10 2025 01:40:16
 
 #Purpose:            
 
@@ -45,7 +45,7 @@ Phase 3
 
 Design Statistics after Packing
     Number of Combinational MCs 	:	11
-    Number of Sequential MCs    	:	22
+    Number of Sequential MCs    	:	24
     Number of DPs               	:	7
     Number of Controls          	:	3
     Number of Status            	:	4
@@ -53,9 +53,9 @@ Design Statistics after Packing
     Number of count7cells       	:	1
 
 Device Utilization Summary after Packing
-    Macrocells                  :	33/192
+    Macrocells                  :	35/192
     UDBS                        :	9/24
-    IOs                         :	26/72
+    IOs                         :	28/72
 
 
 D2088: Phase 3, elapsed time : 0.0 (sec)
@@ -84,13 +84,13 @@ Clock: ADC_POTENTIOMETRE_Ext_CP_Clk | Frequency: N/A       | Target:  24.0 MHz
 Clock: ADC_POTENTIOMETRE_Ext_CP_Clk(routed) | Frequency: N/A       | Target:  24.0 MHz
 Clock: ADC_POTENTIOMETRE_theACLK | Frequency: N/A       | Target:   0.6 MHz
 Clock: ADC_POTENTIOMETRE_theACLK(fixed-function) | Frequency: N/A       | Target:   0.6 MHz
-Clock: CyBUS_CLK            | Frequency:  50.5 MHz | Target:  24.0 MHz
+Clock: CyBUS_CLK            | Frequency:  52.7 MHz | Target:  24.0 MHz
 Clock: CyBUS_CLK(fixed-function) | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:   3.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  24.0 MHz
-Clock: UART_1_IntClock      | Frequency:  50.5 MHz | Target:   0.1 MHz
+Clock: UART_1_IntClock      | Frequency:  52.7 MHz | Target:   0.1 MHz
 Clock: \ADC_POTENTIOMETRE:DSM\/dec_clock | Frequency: N/A       | Target:   0.1 MHz
 Clock: timer_clock_1        | Frequency:  59.7 MHz | Target:   1.2 MHz
 Clock: timer_clock_2        | Frequency:  59.7 MHz | Target:   1.2 MHz
@@ -110,13 +110,13 @@ Clock: ADC_POTENTIOMETRE_Ext_CP_Clk | Frequency: N/A       | Target:  24.0 MHz
 Clock: ADC_POTENTIOMETRE_Ext_CP_Clk(routed) | Frequency: N/A       | Target:  24.0 MHz
 Clock: ADC_POTENTIOMETRE_theACLK | Frequency: N/A       | Target:   0.6 MHz
 Clock: ADC_POTENTIOMETRE_theACLK(fixed-function) | Frequency: N/A       | Target:   0.6 MHz
-Clock: CyBUS_CLK            | Frequency:   1.3 MHz | Target:  24.0 MHz
+Clock: CyBUS_CLK            | Frequency:   1.2 MHz | Target:  24.0 MHz
 Clock: CyBUS_CLK(fixed-function) | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:   3.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  24.0 MHz
-Clock: UART_1_IntClock      | Frequency:   1.3 MHz | Target:   0.1 MHz
+Clock: UART_1_IntClock      | Frequency:   1.2 MHz | Target:   0.1 MHz
 Clock: \ADC_POTENTIOMETRE:DSM\/dec_clock | Frequency: N/A       | Target:   0.1 MHz
 Clock: timer_clock_1        | Frequency:  59.7 MHz | Target:   1.2 MHz
 Clock: timer_clock_2        | Frequency:  59.7 MHz | Target:   1.2 MHz
@@ -128,17 +128,17 @@ D2088: Phase 7, elapsed time : 0.3 (sec)
 
 Final Design Statistics
     Number of Combinational MCs 	:	11
-    Number of Sequential MCs    	:	22
+    Number of Sequential MCs    	:	24
     Number of DPs               	:	7
     Number of Controls          	:	3
     Number of Status            	:	4
     Number of SyncCells         	:	0
     Number of count7cells       	:	1
-    Number of IOs       	:	26
+    Number of IOs       	:	28
 
 Device Utilization Summary
-    Macrocells                  :	33/192
-    IOs                         :	26/72
+    Macrocells                  :	35/192
+    IOs                         :	28/72
 
 
 
