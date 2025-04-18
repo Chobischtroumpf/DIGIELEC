@@ -12,6 +12,9 @@
 
 #include "linked_list.h"
 #include <cstddef>
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
 semaphore_position get_rsemaphore(char content) {
     switch (content) {
@@ -115,7 +118,7 @@ semaphore_position get_lsemaphore(char content) {
  * - SHORT = dot (·), LONG= dash (−), END = end of character (|)
  * - The array is terminated with END.
  */
-get_morse_code(char content) {
+morse_code *get_morse_code(char content) {
     morse_code *code = (morse_code*) malloc(sizeof(morse_code) * 6);
 
     switch (content) {
@@ -370,6 +373,49 @@ get_morse_code(char content) {
             break;
     }
     return code;
+}
+
+/*
+ * Function to convert a string to Morse code.
+ * The function takes a string as input and returns a pointer to an array of morse_code values.
+ * The array is dynamically allocated and should be freed by the caller.
+ * The array is terminated with END.
+*/
+morse_code *to_morse(const char *input) {
+    
+    if (input == NULL) { return NULL; }
+
+    size_t max_size = strlen(input) * 6;
+    // +1 for the END marker ^w^
+    morse_code *morse_array = (morse_code *)malloc(sizeof(morse_code) * (max_size + 1));
+    if (morse_array == NULL) {
+        // alocation failed, might wanna throw something but atm we just return NULL
+        return NULL;
+    }
+
+    size_t index = 0;
+    for (size_t i = 0; input[i] != '\0'; i++) {
+
+        morse_code *char_morse = get_morse_code(input[i]);
+        if (char_morse == NULL) { continue; }
+
+        for (size_t j = 0; char_morse[j] != END; j++) {
+            morse_array[index++] = char_morse[j];
+            // j < max_size in all cases
+        }
+
+        // adding a separator between characters
+        morse_array[index++] = NONE;
+
+        free(char_morse); // free the temporary morse code array
+    }
+
+    // finally I think replacing the last NONE with END is a good idea
+    if (index > 0 && morse_array[index - 1] == NONE) { index--; }
+    morse_array[index] = END;
+
+    return morse_array;
+
 }
 
 /*

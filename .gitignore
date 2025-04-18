@@ -1,0 +1,6 @@
+**
+!*.c
+!*.h
+!*.cyprj
+!TopDesign/
+!*.cydwr
