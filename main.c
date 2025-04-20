@@ -89,12 +89,56 @@ void handle_UART_receive() {
     // }
 }
 
+/*
+* Init both servo and the potentiometre.
+*/
+void init_servo_and_pot(){
+    uint16_t pwm_period = 48000;
+    PWM_DROITE_Start();
+    timer_clock_1_Start();
+    PWM_GAUCHE_Start();
+    timer_clock_2_Start();
+    PWM_DROITE_WritePeriod(pwm_period);
+    PWM_GAUCHE_WritePeriod(pwm_period);
+    ADC_POTENTIOMETRE_Start();
+    ADC_POTENTIOMETRE_StartConvert();
+}
+
+
+/*
+* Read and return the value of the potentiometre.
+*/
+uint32_t get_pot_val(){
+    uint32_t val_adc;
+    uint32_t val_cmp;
+    if (ADC_POTENTIOMETRE_IsEndConversion(ADC_POTENTIOMETRE_RETURN_STATUS)){
+        val_adc = ADC_POTENTIOMETRE_GetResult32();
+        val_cmp = ((val_adc /(float)0xFFFF) + 1 ) * 2400;
+    }
+    return val_cmp;
+}
+
+
+/*
+* Set the position of the given servo.
+*/
+void set_servo_pos(uint32_t compare_value, uint8_t servo_nb) {
+    if (servo_nb == 0) {
+        PWM_DROITE_WriteCompare(compare_value);
+    } else if (servo_nb == 1) {
+        PWM_GAUCHE_WriteCompare(compare_value);
+    }
+}
+
+
 int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
     UART_1_Start();
     LCD_Char_1_Start();
     keypadInit();
+    init_servo_and_pot();
+    uint8_t current_servo = 0;
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
 
 
@@ -146,11 +190,15 @@ int main(void)
         }
         if (SWITCH_4_Read() == 0) {
             // switch which semaphore to move with the potentiometer
+            current_servo = 1 - current_servo;
+            CyDelay(200);
         }
         //if (PHOTORESISTOR_Read() == 0) {
             //handle_POTENTIOMETER(); // Call the function to handle potentiometer
         CyDelay(500);
     }
+    uint32_t pot_value = read_pot_val();
+    set_servo_pos(pot_value, current_servo);
 }
 
 /* [] END OF FILE */
