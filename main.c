@@ -13,6 +13,7 @@
 #include "project.h"
 #include "linked_list.h"
 #include "keypad.h"
+#include "semaphore.h"
 
 char *handle_keypad_press() {
     static char buffer[3] = {0,0,0}; // Buffer to store the pressed key
@@ -82,15 +83,18 @@ void handle_UART_receive() {
     // we send the message via DAC (sound)
     
     // then, we check if the light is on or off
-    // if (PHOTORESISTOR_Read() == 0) {
+    if (PHOTORESISTOR_Read() == 0 && strlen(message) != 0) {
         //If the light is on, we send the message via semaphore (PWM)
+        msg_to_semaphore(message);
+    }
     // else {
         // otherwise we send it via LEDs
     // }
 }
 
+
 /*
-* Init both servo and the potentiometre.
+* Init both servos and the potentiometre.
 */
 void init_servo_and_pot(){
     uint16_t pwm_period = 48000;
@@ -110,23 +114,36 @@ void init_servo_and_pot(){
 */
 uint32_t get_pot_val(){
     uint32_t val_adc;
-    uint32_t val_cmp;
     if (ADC_POTENTIOMETRE_IsEndConversion(ADC_POTENTIOMETRE_RETURN_STATUS)){
         val_adc = ADC_POTENTIOMETRE_GetResult32();
-        val_cmp = ((val_adc /(float)0xFFFF) + 1 ) * 2400;
     }
-    return val_cmp;
+    return val_adc;
 }
 
 
 /*
 * Set the position of the given servo.
 */
-void set_servo_pos(uint32_t compare_value, uint8_t servo_nb) {
+void set_servo_pos(uint32_t val, uint8_t servo_nb) {
     if (servo_nb == 0) {
-        PWM_DROITE_WriteCompare(compare_value);
+        PWM_DROITE_WriteCompare(val);
     } else if (servo_nb == 1) {
-        PWM_GAUCHE_WriteCompare(compare_value);
+        PWM_GAUCHE_WriteCompare(val);
+    }
+}
+
+/*
+* Converts a text message into semaphore positions and controls the servos accordingly.
+*/
+void msg_to_semaphore(const char *message){
+    for (size_t i=0; i<strlen(message); i++){
+        semaphore_position r_sem = lstget(message[i])->right_semaphore;
+        semaphore_position l_sem = lstget(message[i])->left_semaphore;
+        uint32_t r_cmp_val = sem_pos_to_cmp(r_sem);
+        set_servo_pos(r_cmp_val, 0);    // 0 = right servo
+        uint32_t l_cmp_val = sem_pos_to_cmp(l_sem);
+        set_servo_pos(l_cmp_val, 1);    // 1 = left servo
+        CyDelay(500);
     }
 }
 
@@ -155,7 +172,9 @@ int main(void)
             LCD_Char_1_PrintString(message); // Print the message on the LCD
 
             // then, we check if the light is on or off
-            // if (PHOTORESISTOR_Read() == 0) {
+            if (PHOTORESISTOR_Read() == 0) {
+                msg_to_semaphore(message);
+            }
                 // If the light is on, we send the message via DAC (sound)
                 //and via semaphore (PWM)
             // } else {
@@ -193,12 +212,14 @@ int main(void)
             current_servo = 1 - current_servo;
             CyDelay(200);
         }
-        //if (PHOTORESISTOR_Read() == 0) {
-            //handle_POTENTIOMETER(); // Call the function to handle potentiometer
+        if (PHOTORESISTOR_Read() == 0) {
+            // read the pototiometer value and use it to position the current servo
+            uint32_t val_adc = read_pot_val();
+            uint32_t val_cmp = ((val_adc /(float)0xFFFF) + 1 ) * 2400;
+            set_servo_pos(val_cmp, current_servo);
+        }
         CyDelay(500);
     }
-    uint32_t pot_value = read_pot_val();
-    set_servo_pos(pot_value, current_servo);
 }
 
 /* [] END OF FILE */
