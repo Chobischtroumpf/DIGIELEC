@@ -269,7 +269,7 @@ morse_code *get_morse_code(char content) {
 /*
  * function to get the morse array size
  */
-size_t get_morse_array_size(char *input) {
+size_t get_morse_array_size(const char *input) {
     size_t max_size = 0;
     for (size_t i = 0; input[i] != '\0'; i++) {
         uint8_t size = 0;
@@ -278,6 +278,7 @@ size_t get_morse_array_size(char *input) {
         while (char_morse[size] != END) { size++; }
         max_size += size + 3; // +1 for the separator
     }
+    return max_size;
 }
 
 /*

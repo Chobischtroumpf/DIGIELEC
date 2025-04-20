@@ -16,6 +16,7 @@
 
 char *handle_keypad_press() {
     static char buffer[2] = {0,0}; // Buffer to store the pressed key
+    char *retval = NULL; // Pointer to return the message
     char key = keypadScan(); // Get the pressed key from the keypad
     if (key != 'z') {
         if (buffer[0] == 0) {
@@ -28,33 +29,38 @@ char *handle_keypad_press() {
         //reset buffer if the second key is not '*' and not 0
         buffer[0] = 0; // Reset the first key
         buffer[1] = 0; // Reset the second key
+        return retval;
     } else if (buffer[1] == '*') {
         // If the second key is '*', return the string associated to the first key
         // and reset the buffer
-        if (buffer[0] == '1') {
-            return "SOS";
-        } else if (buffer[0] == '2') {
-            return "BEAMS";
-        } else if (buffer[0] == '3') {
-            return "PLEASE HELP";
-        } else if (buffer[0] == '4') {
-            return "HELP ME";
-        } else if (buffer[0] == '5') {
-            return "HELP";
-        } else if (buffer[0] == '6') {
-            return "OUT OF FOOD";
-        } else if (buffer[0] == '7') {
-            return "IN DANGER";
-        } else if (buffer[0] == '8') {
-            return "WERE LOST";
-        } else if (buffer[0] == '9') {
-            return "BEP KICKER IS GREAT";
-        } else if (buffer[0] == '0') {
-            return "ZERO";
-        }
-        return NULL; // Return NULL if no valid key is pressed
+        char val = buffer[0];
+        buffer[0]=0;
+        buffer[1]=0;
         
+        if (val == '1') {
+            return "SOS";
+        } else if (val == '2') {
+            return "BEAMS";
+        } else if (val == '3') {
+            return "PLEASE HELP";
+        } else if (val == '4') {
+            return "HELP ME";
+        } else if (val == '5') {
+            return "HELP";
+        } else if (val == '6') {
+            return "OUT OF FOOD";
+        } else if (val == '7') {
+            return "IN DANGER";
+        } else if (val == '8') {
+            return "WERE LOST";
+        } else if (val == '9') {
+            return "BEP KICKER IS GREAT";
+        } else if (val == '0') {
+            return "ZERO";
+        }        
     }
+    return NULL; // Return NULL if no valid key is pressed
+
 }
 
 int main(void)
