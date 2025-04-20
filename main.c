@@ -15,7 +15,7 @@
 #include "keypad.h"
 
 char *handle_keypad_press() {
-    static char buffer[2] = {0,0}; // Buffer to store the pressed key
+    static char buffer[3] = {0,0,0}; // Buffer to store the pressed key
     char *retval = NULL; // Pointer to return the message
     char key = keypadScan(); // Get the pressed key from the keypad
     if (key != 'z') {
@@ -24,6 +24,9 @@ char *handle_keypad_press() {
         } else {
             buffer[1] = key; // Store the second key pressed
         }
+        
+    } else {
+        return NULL;
     }
     if (buffer[1] != 0 && buffer[1] != '*') {
         //reset buffer if the second key is not '*' and not 0
@@ -42,7 +45,7 @@ char *handle_keypad_press() {
         } else if (val == '2') {
             return "BEAMS";
         } else if (val == '3') {
-            return "PLEASE HELP";
+            return "PLEASE";
         } else if (val == '4') {
             return "HELP ME";
         } else if (val == '5') {
@@ -52,21 +55,45 @@ char *handle_keypad_press() {
         } else if (val == '7') {
             return "IN DANGER";
         } else if (val == '8') {
-            return "WERE LOST";
+            return "LOST";
         } else if (val == '9') {
-            return "BEP KICKER IS GREAT";
+            return "KICKER LOVE";
         } else if (val == '0') {
             return "ZERO";
         }        
     }
     return NULL; // Return NULL if no valid key is pressed
+}
 
+void handle_UART_receive() {
+    char message[9] = {0};
+    int index = 0;
+    while (UART_1_GetRxBufferSize() != 0 && index <8)
+    {
+        char RxData = UART_1_GetChar();
+        strncat(message, &RxData, 1);
+        index++;
+    }
+    if (strlen(message) != 0){
+        LCD_Char_1_ClearDisplay();
+        LCD_Char_1_Position(0, 0);
+        LCD_Char_1_PrintString(message);
+    }
+    // we send the message via DAC (sound)
+    
+    // then, we check if the light is on or off
+    // if (PHOTORESISTOR_Read() == 0) {
+        //If the light is on, we send the message via semaphore (PWM)
+    // else {
+        // otherwise we send it via LEDs
+    // }
 }
 
 int main(void)
 {
-    // CyGlobalIntEnable; /* Enable global interrupts. */
-
+    CyGlobalIntEnable; /* Enable global interrupts. */
+    UART_1_Start();
+    LCD_Char_1_Start();
     keypadInit();
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
 
@@ -76,50 +103,53 @@ int main(void)
         char *message = handle_keypad_press(); // Call the function to handle keypad press
         if (message != NULL) {
             // If a message is returned, we send it to the UART
-            // UART_PutString(message);
-            // UART_PutCRLF(); // Send a new line after the message
+            UART_1_PutString(message);
+            UART_1_PutCRLF(' '); // Send a new line after the message
             // then we display it on the LCD
-            // LCD_ClearDisplay();
-            // LCD_Position(0, 0); // Set the cursor to the first line
-            // LCD_PrintString(message); // Print the message on the LCD
+            LCD_Char_1_ClearDisplay();
+            LCD_Char_1_Position(0, 0); // Set the cursor to the first line
+            LCD_Char_1_PrintString(message); // Print the message on the LCD
 
             // then, we check if the light is on or off
             // if (PHOTORESISTOR_Read() == 0) {
                 // If the light is on, we send the message via DAC (sound)
                 //and via semaphore (PWM)
-            // else {
+            // } else {
                 // If the light is off, we send the message via DAC (sound)
                 // and via LEDs
+            // }
         }
 
+        handle_UART_receive();
+        
         // then we handle the switches:
         if (SWITCH_1_Read() == 0) {
             // If the switch is pressed, we send a bip via DAC as long as the switch is pressed (sound)
 
-            if (PHOTORESISTOR_Read() != 0) {
+            //if (PHOTORESISTOR_Read() != 0) {
                 // If the light is off, we send a bip via LED
-            }
+          //  }
         }
         if (SWITCH_2_Read() == 0) {
             // If the switch is pressed, we send a 250ms bip via DAC (sound)
 
-            if (PHOTORESISTOR_Read() != 0) {
+            //if (PHOTORESISTOR_Read() != 0) {
                 // If the light is off, we send a 250ms bip via LED
-            }
+            //}
         }
         if (SWITCH_3_Read() == 0) {
             // If the switch is pressed, we send a 750ms bip via DAC (sound)
 
-            if (PHOTORESISTOR_Read() != 0) {
+            //if (PHOTORESISTOR_Read() != 0) {
                 // If the light is off, we send a 750ms bip via LED
-            }
+            //}
         }
         if (SWITCH_4_Read() == 0) {
             // switch which semaphore to move with the potentiometer
         }
-        if (PHOTORESISTOR_Read() == 0) {
-            handle_POTENTIOMETER(); // Call the function to handle potentiometer
-
+        //if (PHOTORESISTOR_Read() == 0) {
+            //handle_POTENTIOMETER(); // Call the function to handle potentiometer
+        CyDelay(500);
     }
 }
 
