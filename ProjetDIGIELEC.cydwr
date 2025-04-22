@@ -268,6 +268,7 @@
       <Data key="2896685e-e4d1-4ece-a08e-401ced2f90d9" value="SWITCH_4" />
       <Data key="77715107-f8d5-47e5-a629-0fb83101ac6b" value="AUDIO" />
       <Data key="a792f7f6-cf82-4a96-8e39-e0ffa3ce0f99" value="ROW3" />
+      <Data key="afca7750-6262-4bf4-9fe5-ced9b791ffcc" value="PHOTORESISTOR" />
       <Data key="b09a15a7-488d-46da-8b51-6a3d16210b0f" value="ROW1" />
       <Data key="e6aaff7b-caa3-4e3d-8c88-e4ce5bb3f603" value="SWITCH_2" />
       <Data key="e851a3b9-efb8-48be-bbb8-b303b216c393" value="COL1" />
@@ -3460,6 +3461,11 @@
     <Group key="a792f7f6-cf82-4a96-8e39-e0ffa3ce0f99">
       <Group key="0">
         <Data key="Port Format" value="15,0" />
+      </Group>
+    </Group>
+    <Group key="afca7750-6262-4bf4-9fe5-ced9b791ffcc">
+      <Group key="0">
+        <Data key="Port Format" value="15,1" />
       </Group>
     </Group>
     <Group key="b09a15a7-488d-46da-8b51-6a3d16210b0f">

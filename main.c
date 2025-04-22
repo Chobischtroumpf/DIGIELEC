@@ -128,9 +128,9 @@ void handle_UART_receive(uint32_t *val_adc_phot) {
         //If the light is on, we send the message via semaphore (PWM)
         msg_to_semaphore(message);
     }
-    // else {
+    else {
         // otherwise we send it via LEDs
-    // }
+    }
 }
 
 
@@ -193,10 +193,10 @@ int main(void)
                 msg_to_semaphore(message);
             }
                 
-            // } else {
+            else {
                 // If the light is off, we send the message via DAC (sound)
                 // and via LEDs
-            // }
+            }
         }
 
         handle_UART_receive(&val_adc_phot);
@@ -205,23 +205,23 @@ int main(void)
         if (SWITCH_1_Read() == 0) {
             // If the switch is pressed, we send a bip via DAC as long as the switch is pressed (sound)
 
-            //if (check_light(&val_adc_phot) != 0) {
+            if (check_light(&val_adc_phot) != 0) {
                 // If the light is off, we send a bip via LED
-          //  }
+            }
         }
         if (SWITCH_2_Read() == 0) {
             // If the switch is pressed, we send a 250ms bip via DAC (sound)
 
-            //if (check_light(&val_adc_phot) != 0) {
+            if (check_light(&val_adc_phot) != 0) {
                 // If the light is off, we send a 250ms bip via LED
-            //}
+            }
         }
         if (SWITCH_3_Read() == 0) {
             // If the switch is pressed, we send a 750ms bip via DAC (sound)
 
-            //if (check_light(&val_adc_phot) != 0) {
+            if (check_light(&val_adc_phot) != 0) {
                 // If the light is off, we send a 750ms bip via LED
-            //}
+            }
         }
         if (SWITCH_4_Read() == 0) {
             // switch which semaphore to move with the potentiometer
@@ -230,7 +230,7 @@ int main(void)
         }
         if (check_light(&val_adc_phot) == 0) {
             // read the pototiometer value and use it to position the current servo
-            uint32_t val_cmp = (((val_adc_pot /(float)0xFFFF)*4) + 1 ) * 1200;      // (0*4)+1*1200=1200; (1*4)+1*1200=6000
+            uint32_t val_cmp = (((val_adc_pot /(float)0xFFFF)*4) + 1 ) * 1200; 
             set_servo_pos(val_cmp, current_servo);
         }
         CyDelay(500);
