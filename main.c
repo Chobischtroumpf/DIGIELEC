@@ -13,6 +13,34 @@
 #include "project.h"
 #include "linked_list.h"
 #include "keypad.h"
+#include "semaphore.h"
+
+
+/*
+* Set the position of the given servo.
+*/
+void set_servo_pos(uint32_t val, uint8_t servo_nb) {
+    if (servo_nb == 0) {
+        PWM_DROITE_WriteCompare(val);
+    } else if (servo_nb == 1) {
+        PWM_GAUCHE_WriteCompare(val);
+    }
+}
+
+/*
+* Converts a text message into semaphore positions and controls the servos accordingly.
+*/
+void msg_to_semaphore(char *message){
+    for (size_t i=0; i<strlen(message); i++){
+        semaphore_position r_sem = lstget(message[i])->right_semaphore;
+        semaphore_position l_sem = lstget(message[i])->left_semaphore;
+        uint32_t r_cmp_val = sem_pos_to_cmp(r_sem);
+        set_servo_pos(r_cmp_val, 0);    // 0 = right servo
+        uint32_t l_cmp_val = sem_pos_to_cmp(l_sem);
+        set_servo_pos(l_cmp_val, 1);    // 1 = left servo
+        CyDelay(500);
+    }
+}
 
 char *handle_keypad_press() {
     static char buffer[3] = {0,0,0}; // Buffer to store the pressed key
@@ -82,12 +110,31 @@ void handle_UART_receive() {
     // we send the message via DAC (sound)
     
     // then, we check if the light is on or off
-    // if (PHOTORESISTOR_Read() == 0) {
+    //if (PHOTORESISTOR_Read() == 0 && strlen(message) != 0) {
         //If the light is on, we send the message via semaphore (PWM)
+    //    msg_to_semaphore(message);
+    //}
     // else {
         // otherwise we send it via LEDs
     // }
 }
+
+
+/*
+* Init both servos and the potentiometre.
+*/
+void init_servo_and_pot(){
+    uint16_t pwm_period = 48000;
+    PWM_DROITE_Start();
+    timer_clock_1_Start();
+    PWM_GAUCHE_Start();
+    timer_clock_2_Start();
+    PWM_DROITE_WritePeriod(pwm_period);
+    PWM_GAUCHE_WritePeriod(pwm_period);
+    ADC_POTENTIOMETRE_Start();
+    ADC_POTENTIOMETRE_StartConvert();
+}
+
 
 int main(void)
 {
@@ -95,6 +142,9 @@ int main(void)
     UART_1_Start();
     LCD_Char_1_Start();
     keypadInit();
+    init_servo_and_pot();
+    uint8_t current_servo = 0;
+    uint32_t val_adc = 0;
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
 
 
@@ -111,7 +161,9 @@ int main(void)
             LCD_Char_1_PrintString(message); // Print the message on the LCD
 
             // then, we check if the light is on or off
-            // if (PHOTORESISTOR_Read() == 0) {
+            //if (PHOTORESISTOR_Read() == 0) {
+            //    msg_to_semaphore(message);
+            //}
                 // If the light is on, we send the message via DAC (sound)
                 //and via semaphore (PWM)
             // } else {
@@ -146,9 +198,18 @@ int main(void)
         }
         if (SWITCH_4_Read() == 0) {
             // switch which semaphore to move with the potentiometer
+            current_servo = 1 - current_servo;
+            CyDelay(200);
         }
         //if (PHOTORESISTOR_Read() == 0) {
-            //handle_POTENTIOMETER(); // Call the function to handle potentiometer
+            // read the pototiometer value and use it to position the current servo
+            if (ADC_POTENTIOMETRE_IsEndConversion(ADC_POTENTIOMETRE_RETURN_STATUS)){
+                    val_adc = ADC_POTENTIOMETRE_GetResult32();
+            }
+            // (0*4)+1*1200=1200; (1*4)+1*1200=6000
+            uint32_t val_cmp = (((val_adc /(float)0xFFFF)*4) + 1 ) * 1200;
+            set_servo_pos(val_cmp, current_servo);
+        //}
         CyDelay(500);
     }
 }
