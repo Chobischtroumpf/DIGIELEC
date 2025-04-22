@@ -40,13 +40,13 @@ void msg_to_semaphore(char *message){
         set_servo_pos(r_cmp_val, 0);    // 0 = right servo
         uint32_t l_cmp_val = sem_pos_to_cmp(l_sem);
         set_servo_pos(l_cmp_val, 1);    // 1 = left servo
-        CyDelay(500);
+        CyDelay(1000);
     }
 }
 
 
 int check_light(uint32_t *val_adc_phot) {
-    uint32_t norm_val_phot = (*val_adc_phot /(float)0xFFFF);
+    float norm_val_phot = (*val_adc_phot /(float)0xFFFF);
     if (norm_val_phot > LIGHT_THRESHOLD) {
         // Light is on
         return 0;
@@ -101,7 +101,7 @@ char *handle_keypad_press() {
         } else if (val == '9') {
             return "KICKER LOVE";
         } else if (val == '0') {
-            return "ZERO";
+            return "YVES DE SHMET";
         }        
     }
     return NULL; // Return NULL if no valid key is pressed
@@ -161,7 +161,7 @@ int main(void)
     PWM_DROITE_Start();
     timer_clock_1_Start();
     PWM_GAUCHE_Start();
-    timer_clock_2_Start();
+   
     PWM_DROITE_WritePeriod(pwm_period);
     PWM_GAUCHE_WritePeriod(pwm_period);
     Mux_Start();
@@ -196,6 +196,7 @@ int main(void)
             else {
                 // If the light is off, we send the message via DAC (sound)
                 // and via LEDs
+                msg_to_semaphore(message);
             }
         }
 
@@ -223,7 +224,7 @@ int main(void)
                 // If the light is off, we send a 750ms bip via LED
             }
         }
-        if (SWITCH_4_Read() == 0) {
+        if (SWITCH_4_Read() == 1) {
             // switch which semaphore to move with the potentiometer
             current_servo = 1 - current_servo;
             CyDelay(200);

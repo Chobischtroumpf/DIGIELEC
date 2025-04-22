@@ -21,35 +21,34 @@
 */
 uint32_t sem_pos_to_cmp(semaphore_position pos){
     uint32_t cmp_val;
-    uint16_t angle;
+    float angle = 22.5;
     switch (pos){
-    case ZERO:
-        angle = 270/2; 
-        break;
     case FIRST:
-        angle = 225/2; 
+        angle*=1;
         break;
     case SECOND:
-        angle = 180/2;
+        angle*=2;
         break;
     case THIRD:
-        angle = 135/2;
+        angle*=3;
         break;
     case FOURTH:
-        angle = 90/2;
+        angle*=4;
         break;
     case FIFTH:
-        angle = 45/2;
+        angle*=5;
         break;
     case SIXTH:
-        angle = 360/2;
+        angle*=6;
         break;
     case SEVENTH:
-        angle = 315/2;
+        angle*=7;
         break;
+    case ZERO:
     default:
         angle = 0;
         break;
+
     }
     
     // 1200 + 1*4800 = 6000, 1200 + 0*4800 = 1200
