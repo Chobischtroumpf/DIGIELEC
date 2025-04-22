@@ -169,13 +169,13 @@ int main(void)
     uint8_t current_servo = 0;
     uint32_t val_adc_pot = 0;
     uint32_t val_adc_phot = 0;
-    get_adc_val(&val_adc_pot, &val_adc_phot);
     
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
 
 
     for(;;)
     {
+        get_adc_val(&val_adc_pot, &val_adc_phot);
         char *message = handle_keypad_press(); // Call the function to handle keypad press
         if (message != NULL) {
             // If a message is returned, we send it to the UART
