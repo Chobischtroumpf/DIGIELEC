@@ -17,6 +17,36 @@
 
 #define LIGHT_THRESHOLD 0.3  // Low light bar (0 to 1)
 
+void play_sound(uint16_t ms){
+   int overflows=0;
+   while(overflows < ms+1){
+       if ((0x80 & MORSE_TIMER_ReadStatusRegister()) != 0){
+        overflows  += 1;    
+        }
+    VDAC_SetValue(128);
+    }
+    
+}
+
+void short_bip(){
+    play_sound(250);
+}
+
+void long_bip(){
+    play_sound(1000);
+}
+
+void handle_morse(char *message){
+   
+    morse_code * morse_array = to_morse(message);
+    size_t i =0;
+    while(morse_array[i] != END){
+       if(morse_array[i] == NONE){CyDelay(250);}
+       else if (morse_array[i]  == LONG){ long_bip();}
+       else if (morse_array[i] == SHORT){ short_bip();}
+       i++;
+    }
+}
 
 /*
 * Set the position of the given servo.
@@ -122,6 +152,7 @@ void handle_UART_receive(uint32_t *val_adc_phot) {
         LCD_Char_1_PrintString(message);
     }
     // we send the message via DAC (sound)
+    handle_morse(message);
     
     // then, we check if the light is on or off
     if (check_light(val_adc_phot) == 0) {
@@ -149,12 +180,13 @@ void get_adc_val(uint32_t* val_adc_pot, uint32_t* val_adc_phot){
     }
 }
 
-
-
 int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
     UART_1_Start();
+    VDAC_Start();
+    MORSE_TIMER_Start();
+   
     LCD_Char_1_Start();
     keypadInit();
     uint16_t pwm_period = 48000;
@@ -190,13 +222,14 @@ int main(void)
             if (check_light(&val_adc_phot) == 0) {
                 // If the light is on, we send the message via DAC (sound)
                 //and via semaphore (PWM)
+                handle_morse(message);
                 msg_to_semaphore(message);
             }
                 
             else {
                 // If the light is off, we send the message via DAC (sound)
                 // and via LEDs
-                msg_to_semaphore(message);
+                handle_morse(message);
             }
         }
 
@@ -214,12 +247,13 @@ int main(void)
             // If the switch is pressed, we send a 250ms bip via DAC (sound)
 
             if (check_light(&val_adc_phot) != 0) {
+                play_sound(250);
                 // If the light is off, we send a 250ms bip via LED
             }
         }
         if (SWITCH_3_Read() == 0) {
             // If the switch is pressed, we send a 750ms bip via DAC (sound)
-
+            play_sound(750);
             if (check_light(&val_adc_phot) != 0) {
                 // If the light is off, we send a 750ms bip via LED
             }
