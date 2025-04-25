@@ -35,7 +35,7 @@ void use_VDAC(uint16_t ms){
     while(overflows < ms + 1) {
 
         // Timer overflows in 1ms intervals, meaning ms overflows will last ms milliseconds
-        if ((0x80 & MORSE_TIMER_ReadStatusRegister()) != 0){
+        if ((0x80 & MORSE_TIMER_ReadStatusRegister()) != 0) {
             overflows += 1;    
         }
 
