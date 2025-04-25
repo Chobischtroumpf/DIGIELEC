@@ -163,40 +163,55 @@ void get_adc_val(uint32_t* val_adc_pot, uint32_t* val_adc_phot) {
 
 
 
+// handlers
 
-void handle_morse(char *message, uint32_t *val_adc_phot) {
-   
-    morse_code * morse_array = to_morse(message);
-    size_t i = 0;
-    while(morse_array[i] != END){
+void handle_morse(char *message, bool use_leds) {
 
-        if(morse_array[i] == NONE) {
-          
-            // standard transition delay for morse code
+    size_t message_length = strlen(message);
+    for (size_t i = 0; i < message_length; i++) {
+        
+        morse_code* morseCode = get_morse_code(message[i]);
+        int j = 0;
+
+        while (morseCode[j] != END) {
+            
+            if (morseCode[j] != NONE) {
+
+                if (use_leds) { write_leds(1); } // Turn on LEDs
+                
+                if (morseCode[j] == LONG) {
+                    use_VDAC(LONG_BEEP); // Use VDAC for long beep
+                } else if (morseCode[j] == SHORT) {
+                    use_VDAC(SHORT_BEEP); // Use VDAC for short beep
+                }
+
+                if (use_leds) { write_leds(0); } // Turn off LEDs
+
+            } else {
+                // pass (none)
+            }
+
+            // Standard transition delay for morse code
             CyDelay(SHORT_BEEP);
-            
-        } else {
-            
-            if (check_light(val_adc_phot) == 1) { write_leds(1); }
-            
-            if (morse_array[i] == LONG) { use_VDAC(LONG_BEEP); } 
-            else if (morse_array[i] == SHORT) { use_VDAC(SHORT_BEEP); }
-            
-            write_leds(0);
-            
+
+            j++;
+
         }
         
-        i++;
-    
+        CyDelay(LONG_BEEP); // Delay between characters
+        free(morseCode); // Free the allocated memory for morse code
+
     }
+
 }
 
-void msg_to_semaphore(char *message) {
+void handle_semaphore(char *message) {
 
-    for (size_t i=0; i < strlen(message); i++){
+    // Send the message via semaphore (PWM)
+    for (size_t i = 0; i < strlen(message); i++){
 
-        semaphore_position r_sem = lstget(message[i])->right_semaphore;
-        semaphore_position l_sem = lstget(message[i])->left_semaphore;
+        semaphore_position r_sem = get_rsemaphore(message[i]);
+        semaphore_position l_sem = get_lsemaphore(message[i]);
 
         uint32_t r_cmp_val = sem_pos_to_cmp(r_sem);
         set_servo_pos(r_cmp_val, 0);    // 0 = right servo
@@ -207,6 +222,9 @@ void msg_to_semaphore(char *message) {
     }
 
 }
+
+
+
 
 void handle_UART_receive(uint32_t *val_adc_phot) {
     char message[9] = {0};
