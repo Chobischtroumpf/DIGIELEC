@@ -1,15 +1,16 @@
-#include "linked_list.h"
-#include <stdint.h>
+
+#include "morse.h"
 
 /*
  * Function to get the Morse code representation of a character.
  * The function returns a pointer to an array of morse_code values.
  * The array is dynamically allocated and should be freed by the caller.
  * morse code is formatted as follows:
- * - SHORT = dot (·), LONG= dash (−), END = end of character (|)
+ * - SHORT = dot (·), LONG = dash (−), END = end of character (|)
  * - The array is terminated with END.
- */
-morse_code *get_morse_code(char content) {
+*/
+morse_code *getMorseCode(char content) {
+    
     morse_code *code = (morse_code*) malloc(sizeof(morse_code) * 6);
 
     switch (content) {
@@ -263,5 +264,8 @@ morse_code *get_morse_code(char content) {
         default:
             break;
     }
+
     return code;
+
 }
+

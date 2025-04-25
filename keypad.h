@@ -1,17 +1,15 @@
-/* ========================================
- *
- * Copyright YOUR COMPANY, THE YEAR
- * All Rights Reserved
- * UNPUBLISHED, LICENSED SOFTWARE.
- *
- * CONFIDENTIAL AND PROPRIETARY INFORMATION
- * WHICH IS THE PROPERTY OF your company.
- *
- * ========================================
-*/
+#ifndef KEYPAD_H
+#define KEYPAD_H
+
 #include "project.h"
+#include <stdint.h>
 
-void keypadInit (void);
+#define KBD_DELAY 5
+
+
+void keypadInit(void);
 uint8_t keypadScan(void);
+const char *getMessageFromKey(char key);
 
-/* [] END OF FILE */
+
+#endif /* KEYPAD_H */

@@ -1,26 +1,27 @@
-/* ========================================
- *
- * Copyright YOUR COMPANY, THE YEAR
- * All Rights Reserved
- * UNPUBLISHED, LICENSED SOFTWARE.
- *
- * CONFIDENTIAL AND PROPRIETARY INFORMATION
- * WHICH IS THE PROPERTY OF your company.
- *
- * ========================================
-*/
+
 #include "keypad.h"
 
-#define KBD_DELAY   5
 
+/*
+ * Function to initialize the keypad.
+ * The function sets all columns to high impedance (input) mode.
+*/
+void keypadInit(void) {
 
-void keypadInit (void) {
+    // Set all columns to high impedance (input) mode
     COL1_Write(1);
     COL2_Write(1);
     COL3_Write(1);
+
 }
 
-uint8_t keypadScan (void) {
+/*
+ * Function to scan the keypad and return the key pressed.
+ * The function returns a character corresponding to the key pressed.
+ * The function returns 'z' if no key is pressed.
+*/
+uint8_t keypadScan(void) {
+    
     COL1_Write(0);
     CyDelay(KBD_DELAY);
     if (!ROW0_Read()) {
@@ -84,5 +85,25 @@ uint8_t keypadScan (void) {
     return('z');
 }
 
+/*
+ * Function to get some message from the keypad tiles.
+ * The function returns a string corresponding to the key pressed.
+*/
+const char *getMessageFromKey(char key) {
 
-/* [] END OF FILE */
+    switch (key) {
+        case '1': return "SOS";
+        case '2': return "BEAMS";
+        case '3': return "PLEASE";
+        case '4': return "HELP ME";
+        case '5': return "HELP";
+        case '6': return "OUT OF FOOD";
+        case '7': return "IN DANGER";
+        case '8': return "LOST";
+        case '9': return "KICKER LOVE";
+        case '0': return "YVES DE SHMET";
+        default:  return NULL;
+    }
+
+}
+
