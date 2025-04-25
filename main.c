@@ -41,7 +41,7 @@ void use_VDAC(uint16_t ms){
             if (overflows%2)
                 VDAC_SetValue(MORSE_FREQUENCY);
             else
-                VDAC_SetValue(MORSE_FREQUENCY+2);
+                VDAC_SetValue(MORSE_FREQUENCY+50);
         }
 
     }
@@ -180,12 +180,13 @@ void handle_morse(char *message, bool use_leds) {
         while (morseCode[j] != END) {
             
             if (morseCode[j] != NONE) {
-
                 if (use_leds) { write_leds(1); } // Turn on LEDs
                 
                 if (morseCode[j] == LONG) {
+                    UART_1_PutString("- ");
                     use_VDAC(LONG_BEEP); // Use VDAC for long beep
                 } else if (morseCode[j] == SHORT) {
+                    UART_1_PutString(". ");
                     use_VDAC(SHORT_BEEP); // Use VDAC for short beep
                 }
 
@@ -193,6 +194,7 @@ void handle_morse(char *message, bool use_leds) {
 
             } else {
                 // pass (none)
+                UART_1_PutChar(' ');
             }
 
             // Standard transition delay for morse code
@@ -201,11 +203,11 @@ void handle_morse(char *message, bool use_leds) {
             j++;
 
         }
-        
         CyDelay(LONG_BEEP); // Delay between characters
         free(morseCode); // Free the allocated memory for morse code
 
     }
+    UART_1_PutCRLF(' ');
 
 }
 
@@ -240,17 +242,17 @@ void handle_UART_receive(uint32_t val_adc_phot) {
         LCD_Char_1_ClearDisplay();
         LCD_Char_1_Position(0, 0);
         LCD_Char_1_PrintString(message);
-    }
-    
-    if (check_light(val_adc_phot)) {
-        // If the light is on, we send the message via DAC (sound)
-        // and via semaphore (PWM)
-        handle_morse(message, false);
-        handle_semaphore(message);
-    } else {
-        // If the light is off, we send the message via DAC (sound)
-        // and via LEDs
-        handle_morse(message, true);
+        
+        if (check_light(val_adc_phot)) {
+            // If the light is on, we send the message via DAC (sound)
+            // and via semaphore (PWM)
+            handle_morse(message, false);
+            handle_semaphore(message);
+        } else {
+            // If the light is off, we send the message via DAC (sound)
+            // and via LEDs
+            handle_morse(message, true);
+        }
     }
 }
 
@@ -289,8 +291,6 @@ int main(void) {
         char *message = handle_keypad_press(); // Call the function to handle keypad press
         if (message != NULL) {
             // If a message is returned, we send it to the UART
-            UART_1_PutString(message);
-            UART_1_PutCRLF(' '); // Send a new line after the message
             // then we display it on the LCD
             LCD_Char_1_ClearDisplay();
             LCD_Char_1_Position(0, 0); // Set the cursor to the first line
@@ -315,7 +315,12 @@ int main(void) {
         if (SWITCH_1_Read() == 1) {
             // If the switch is pressed, we send a bip via DAC as long as the switch is pressed (sound)
             while (SWITCH_1_Read() == 1) {
+                if (check_light(val_adc_phot)==0) {
+                    write_leds(1);
+                }
+                use_VDAC(100);
             }
+            write_leds(0);
         }
         
         if (SWITCH_2_Read() == 1) {
