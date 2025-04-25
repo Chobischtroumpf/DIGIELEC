@@ -19,91 +19,76 @@
 #define LONG_BEEP 750
 #define SHORT_BEEP 250
 #define MORSE_FREQUENCY 128
+#define LIGHT_ON 1
+#define LIGHT_OFF 0
+#define SEVRO_RIGHT 0
+#define SEVRO_LEFT 1
 
+
+// utils
 
 void use_VDAC(uint16_t ms){
-   int overflows = 0;
-   while(overflows < ms+1){
-       if ((0x80 & MORSE_TIMER_ReadStatusRegister()) != 0){
-        overflows += 1;    
-       }
-       VDAC_SetValue(MORSE_FREQUENCY);
-   }
+
+    // Set the VDAC value to MORSE_FREQUENCY for ms milliseconds
+    int overflows = 0;
+
+    while(overflows < ms + 1) {
+
+        // Timer overflows in 1ms intervals, meaning ms overflows will last ms milliseconds
+        if ((0x80 & MORSE_TIMER_ReadStatusRegister()) != 0){
+            overflows += 1;    
+        }
+
+        VDAC_SetValue(MORSE_FREQUENCY);
+
+    }
     
 }
 
 int check_light(uint32_t *val_adc_phot) {
-    float norm_val_phot = (*val_adc_phot /(float)0xFFFF);
-    if (norm_val_phot > LIGHT_THRESHOLD) {
-        // Light is on
-        return 0;
-    } else {
-        // Light is off
-        return 1;
-    }
+
+    // Check if the light is on or off based on the ADC value
+    // The light is considered on if the ADC value is above the threshold
+    // and off if it is below the threshold
+
+    float norm_val_phot = (*val_adc_phot / (float) 0xFFFF);
+    return LIGHT_ON ? LIGHT_OFF : norm_val_phot < LIGHT_THRESHOLD;
+
 }
 
-void write_leds(int tw){
+void write_leds(int tw) {
+
+    // Set the LEDs to the given value (0 or 1)
+
     LED_1_Write(tw);
     LED_2_Write(tw);
     LED_3_Write(tw);
     LED_4_Write(tw);
+
 }
 
-void handle_morse(char *message, uint32_t *val_adc_phot) {
-   
-    morse_code * morse_array = to_morse(message);
-    size_t i = 0;
-    while(morse_array[i] != END){
+void set_servo_pos(uint32_t val, uint8_t servo_idx) {
 
-        if(morse_array[i] == NONE) {
-          
-            // standard transition delay for morse code
-            CyDelay(SHORT_BEEP);
-            
-        } else {
-            
-            if (check_light(val_adc_phot) == 1) { write_leds(1); }
-            
-            if (morse_array[i] == LONG) { use_VDAC(LONG_BEEP); } 
-            else if (morse_array[i] == SHORT) { use_VDAC(SHORT_BEEP); }
-            
-            write_leds(0);
-            
-        }
+    // Set the position of the servo based on the given value and servo number
+    // 0 = right servo, 1 = left servo
+
+    switch (servo_idx) {
+
+        case SEVRO_RIGHT:
+            // Set the right servo position
+            PWM_DROITE_WriteCompare(val);
+            break;
+
+        case SEVRO_LEFT:    
+            // Set the left servo position
+            PWM_GAUCHE_WriteCompare(val);
+            break;
         
-        i++;
-    
+        default:
+            break;
     }
+
 }
-
-/*
-* Set the position of the given servo.
-*/
-void set_servo_pos(uint32_t val, uint8_t servo_nb) {
-    if (servo_nb == 0) {
-        PWM_DROITE_WriteCompare(val);
-    } else if (servo_nb == 1) {
-        PWM_GAUCHE_WriteCompare(val);
-    }
-}
-
-/*
-* Converts a text message into semaphore positions and controls the servos accordingly.
-*/
-void msg_to_semaphore(char *message){
-    for (size_t i=0; i<strlen(message); i++){
-        semaphore_position r_sem = lstget(message[i])->right_semaphore;
-        semaphore_position l_sem = lstget(message[i])->left_semaphore;
-        uint32_t r_cmp_val = sem_pos_to_cmp(r_sem);
-        set_servo_pos(r_cmp_val, 0);    // 0 = right servo
-        uint32_t l_cmp_val = sem_pos_to_cmp(l_sem);
-        set_servo_pos(l_cmp_val, 1);    // 1 = left servo
-        CyDelay(1000);
-    }
-}
-
-
 
 char *handle_keypad_press() {
     static char buffer[3] = {0,0,0}; // Buffer to store the pressed key
@@ -153,7 +138,74 @@ char *handle_keypad_press() {
             return "YVES DE SHMET";
         }        
     }
+
     return NULL; // Return NULL if no valid key is pressed
+    
+}
+
+void get_adc_val(uint32_t* val_adc_pot, uint32_t* val_adc_phot) {
+
+    Mux_Select(0);
+    CyDelay(10);
+    ADC_POTENTIOMETRE_StartConvert();
+    if (ADC_POTENTIOMETRE_IsEndConversion(ADC_POTENTIOMETRE_WAIT_FOR_RESULT)){
+        *val_adc_pot = ADC_POTENTIOMETRE_GetResult32();
+    }
+
+    Mux_Select(1);
+    CyDelay(10);
+    ADC_POTENTIOMETRE_StartConvert();
+    if(ADC_POTENTIOMETRE_IsEndConversion(ADC_POTENTIOMETRE_WAIT_FOR_RESULT)){
+        *val_adc_phot = ADC_POTENTIOMETRE_GetResult32();
+    }
+    
+}
+
+
+
+
+void handle_morse(char *message, uint32_t *val_adc_phot) {
+   
+    morse_code * morse_array = to_morse(message);
+    size_t i = 0;
+    while(morse_array[i] != END){
+
+        if(morse_array[i] == NONE) {
+          
+            // standard transition delay for morse code
+            CyDelay(SHORT_BEEP);
+            
+        } else {
+            
+            if (check_light(val_adc_phot) == 1) { write_leds(1); }
+            
+            if (morse_array[i] == LONG) { use_VDAC(LONG_BEEP); } 
+            else if (morse_array[i] == SHORT) { use_VDAC(SHORT_BEEP); }
+            
+            write_leds(0);
+            
+        }
+        
+        i++;
+    
+    }
+}
+
+void msg_to_semaphore(char *message) {
+
+    for (size_t i=0; i < strlen(message); i++){
+
+        semaphore_position r_sem = lstget(message[i])->right_semaphore;
+        semaphore_position l_sem = lstget(message[i])->left_semaphore;
+
+        uint32_t r_cmp_val = sem_pos_to_cmp(r_sem);
+        set_servo_pos(r_cmp_val, 0);    // 0 = right servo
+        uint32_t l_cmp_val = sem_pos_to_cmp(l_sem);
+        set_servo_pos(l_cmp_val, 1);    // 1 = left servo
+        CyDelay(1000);
+
+    }
+
 }
 
 void handle_UART_receive(uint32_t *val_adc_phot) {
@@ -184,28 +236,15 @@ void handle_UART_receive(uint32_t *val_adc_phot) {
 }
 
 
-void get_adc_val(uint32_t* val_adc_pot, uint32_t* val_adc_phot){
-    Mux_Select(0);
-    CyDelay(10);
-    ADC_POTENTIOMETRE_StartConvert();
-    if (ADC_POTENTIOMETRE_IsEndConversion(ADC_POTENTIOMETRE_WAIT_FOR_RESULT)){
-        *val_adc_pot = ADC_POTENTIOMETRE_GetResult32();
-    }
-    Mux_Select(1);
-    CyDelay(10);
-    ADC_POTENTIOMETRE_StartConvert();
-    if(ADC_POTENTIOMETRE_IsEndConversion(ADC_POTENTIOMETRE_WAIT_FOR_RESULT)){
-        *val_adc_phot = ADC_POTENTIOMETRE_GetResult32();
-    }
-}
 
-int main(void)
-{
-    CyGlobalIntEnable; /* Enable global interrupts. */
+
+int main(void) {
+    
+    CyGlobalIntEnable;  // Enable global interrupts.
+    
     UART_1_Start();
     VDAC_Start();
     MORSE_TIMER_Start();
-   
     LCD_Char_1_Start();
     keypadInit();
     uint16_t pwm_period = 48000;
