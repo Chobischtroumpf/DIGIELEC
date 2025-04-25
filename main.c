@@ -16,35 +16,64 @@
 #include "semaphore.h"
 
 #define LIGHT_THRESHOLD 0.3  // Low light bar (0 to 1)
+#define LONG_BEEP 750
+#define SHORT_BEEP 250
+#define MORSE_FREQUENCY 128
 
-void play_sound(uint16_t ms){
-   int overflows=0;
+
+void use_VDAC(uint16_t ms){
+   int overflows = 0;
    while(overflows < ms+1){
        if ((0x80 & MORSE_TIMER_ReadStatusRegister()) != 0){
-        overflows  += 1;    
-        }
-    VDAC_SetValue(128);
-    }
+        overflows += 1;    
+       }
+       VDAC_SetValue(MORSE_FREQUENCY);
+   }
     
 }
 
-void short_bip(){
-    play_sound(250);
+int check_light(uint32_t *val_adc_phot) {
+    float norm_val_phot = (*val_adc_phot /(float)0xFFFF);
+    if (norm_val_phot > LIGHT_THRESHOLD) {
+        // Light is on
+        return 0;
+    } else {
+        // Light is off
+        return 1;
+    }
 }
 
-void long_bip(){
-    play_sound(1000);
+void write_leds(int tw){
+    LED_1_Write(tw);
+    LED_2_Write(tw);
+    LED_3_Write(tw);
+    LED_4_Write(tw);
 }
 
-void handle_morse(char *message){
+void handle_morse(char *message, uint32_t *val_adc_phot) {
    
     morse_code * morse_array = to_morse(message);
-    size_t i =0;
+    size_t i = 0;
     while(morse_array[i] != END){
-       if(morse_array[i] == NONE){CyDelay(250);}
-       else if (morse_array[i]  == LONG){ long_bip();}
-       else if (morse_array[i] == SHORT){ short_bip();}
-       i++;
+
+        if(morse_array[i] == NONE) {
+          
+            // standard transition delay for morse code
+            CyDelay(SHORT_BEEP);
+            
+        } else {
+            
+            if (check_light(val_adc_phot) == 1) { write_leds(1); }
+            
+            if (morse_array[i] == LONG) { use_VDAC(LONG_BEEP); } 
+            else if (morse_array[i] == SHORT) { use_VDAC(SHORT_BEEP); }
+            
+            write_leds(0);
+            
+        }
+        
+        i++;
+    
     }
 }
 
@@ -75,16 +104,6 @@ void msg_to_semaphore(char *message){
 }
 
 
-int check_light(uint32_t *val_adc_phot) {
-    float norm_val_phot = (*val_adc_phot /(float)0xFFFF);
-    if (norm_val_phot > LIGHT_THRESHOLD) {
-        // Light is on
-        return 0;
-    } else {
-        // Light is off
-        return 1;
-    }
-}
 
 char *handle_keypad_press() {
     static char buffer[3] = {0,0,0}; // Buffer to store the pressed key
@@ -152,7 +171,7 @@ void handle_UART_receive(uint32_t *val_adc_phot) {
         LCD_Char_1_PrintString(message);
     }
     // we send the message via DAC (sound)
-    handle_morse(message);
+    handle_morse(message, val_adc_phot);
     
     // then, we check if the light is on or off
     if (check_light(val_adc_phot) == 0) {
@@ -222,14 +241,14 @@ int main(void)
             if (check_light(&val_adc_phot) == 0) {
                 // If the light is on, we send the message via DAC (sound)
                 //and via semaphore (PWM)
-                handle_morse(message);
+                handle_morse(message, &val_adc_phot);
                 msg_to_semaphore(message);
             }
                 
             else {
                 // If the light is off, we send the message via DAC (sound)
                 // and via LEDs
-                handle_morse(message);
+                handle_morse(message, &val_adc_phot);
             }
         }
 
@@ -247,13 +266,13 @@ int main(void)
             // If the switch is pressed, we send a 250ms bip via DAC (sound)
 
             if (check_light(&val_adc_phot) != 0) {
-                play_sound(250);
+                use_VDAC(SHORT_BEEP);
                 // If the light is off, we send a 250ms bip via LED
             }
         }
         if (SWITCH_3_Read() == 0) {
             // If the switch is pressed, we send a 750ms bip via DAC (sound)
-            play_sound(750);
+            use_VDAC(LONG_BEEP);
             if (check_light(&val_adc_phot) != 0) {
                 // If the light is off, we send a 750ms bip via LED
             }
