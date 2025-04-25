@@ -31,27 +31,31 @@ void use_VDAC(uint16_t ms){
 
     // Set the VDAC value to MORSE_FREQUENCY for ms milliseconds
     int overflows = 0;
-
+    
+    VDAC_Wakeup();
     while(overflows < ms + 1) {
 
         // Timer overflows in 1ms intervals, meaning ms overflows will last ms milliseconds
         if ((0x80 & MORSE_TIMER_ReadStatusRegister()) != 0) {
             overflows += 1;    
+            if (overflows%2)
+                VDAC_SetValue(MORSE_FREQUENCY);
+            else
+                VDAC_SetValue(MORSE_FREQUENCY+2);
         }
 
-        VDAC_SetValue(MORSE_FREQUENCY);
-
     }
-    
+
+    VDAC_Sleep();
 }
 
-int check_light(uint32_t *val_adc_phot) {
+int check_light(uint32_t val_adc_phot) {
 
     // Check if the light is on or off based on the ADC value
     // The light is considered on if the ADC value is above the threshold
     // and off if it is below the threshold
 
-    float norm_val_phot = (*val_adc_phot / (float) 0xFFFF);
+    float norm_val_phot = (val_adc_phot / (float) 0xFFFF);
     return LIGHT_ON ? LIGHT_OFF : norm_val_phot < LIGHT_THRESHOLD;
 
 }
@@ -143,7 +147,7 @@ char *handle_keypad_press() {
     
 }
 
-void get_adc_val(uint32_t* val_adc_pot, uint32_t* val_adc_phot) {
+void get_adc_val(uint32_t *val_adc_pot, uint32_t *val_adc_phot) {
 
     Mux_Select(0);
     CyDelay(10);
@@ -226,7 +230,7 @@ void handle_semaphore(char *message) {
 
 
 
-void handle_UART_receive(uint32_t *val_adc_phot) {
+void handle_UART_receive(uint32_t val_adc_phot) {
     char message[9] = {0};
     int index = 0;
     while (UART_1_GetRxBufferSize() != 0 && index <8)
@@ -246,7 +250,7 @@ void handle_UART_receive(uint32_t *val_adc_phot) {
     // then, we check if the light is on or off
     if (check_light(val_adc_phot) == 0) {
         //If the light is on, we send the message via semaphore (PWM)
-        msg_to_semaphore(message);
+        handle_semaphore(message);
     }
     else {
         // otherwise we send it via LEDs
@@ -262,6 +266,7 @@ int main(void) {
     
     UART_1_Start();
     VDAC_Start();
+    VDAC_Sleep();
     MORSE_TIMER_Start();
     LCD_Char_1_Start();
     keypadInit();
@@ -295,34 +300,34 @@ int main(void) {
             LCD_Char_1_PrintString(message); // Print the message on the LCD
 
             // then, we check if the light is on or off
-            if (check_light(&val_adc_phot) == 0) {
+            if (check_light(val_adc_phot) == 0) {
                 // If the light is on, we send the message via DAC (sound)
                 //and via semaphore (PWM)
-                handle_morse(message, &val_adc_phot);
-                msg_to_semaphore(message);
+                handle_morse(message, val_adc_phot);
+                handle_semaphore(message);
             }
                 
             else {
                 // If the light is off, we send the message via DAC (sound)
                 // and via LEDs
-                handle_morse(message, &val_adc_phot);
+                handle_morse(message, val_adc_phot);
             }
         }
 
-        handle_UART_receive(&val_adc_phot);
+        handle_UART_receive(val_adc_phot);
         
         // then we handle the switches:
         if (SWITCH_1_Read() == 0) {
             // If the switch is pressed, we send a bip via DAC as long as the switch is pressed (sound)
 
-            if (check_light(&val_adc_phot) != 0) {
+            if (check_light(val_adc_phot) != 0) {
                 // If the light is off, we send a bip via LED
             }
         }
         if (SWITCH_2_Read() == 0) {
             // If the switch is pressed, we send a 250ms bip via DAC (sound)
 
-            if (check_light(&val_adc_phot) != 0) {
+            if (check_light(val_adc_phot) != 0) {
                 use_VDAC(SHORT_BEEP);
                 // If the light is off, we send a 250ms bip via LED
             }
@@ -330,7 +335,7 @@ int main(void) {
         if (SWITCH_3_Read() == 0) {
             // If the switch is pressed, we send a 750ms bip via DAC (sound)
             use_VDAC(LONG_BEEP);
-            if (check_light(&val_adc_phot) != 0) {
+            if (check_light(val_adc_phot) != 0) {
                 // If the light is off, we send a 750ms bip via LED
             }
         }
@@ -339,7 +344,7 @@ int main(void) {
             current_servo = 1 - current_servo;
             CyDelay(200);
         }
-        if (check_light(&val_adc_phot) == 0) {
+        if (check_light(val_adc_phot) == 0) {
             // read the pototiometer value and use it to position the current servo
             uint32_t val_cmp = (((val_adc_pot /(float)0xFFFF)*4) + 1 ) * 1200; 
             set_servo_pos(val_cmp, current_servo);

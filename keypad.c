@@ -9,7 +9,7 @@
  *
  * ========================================
 */
-#include "project.h"
+#include "keypad.h"
 
 #define KBD_DELAY   5
 
