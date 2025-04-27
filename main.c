@@ -36,10 +36,10 @@ void handleMorse(char *message, bool use_leds) {
                 
                 if (morseCode[j] == LONG) {
                     UART_1_PutString("- ");
-                    use_VDAC(LONG_BEEP); // Use VDAC for long beep
+                    useVDAC(LONG_BEEP); // Use VDAC for long beep
                 } else if (morseCode[j] == SHORT) {
                     UART_1_PutString(". ");
-                    use_VDAC(SHORT_BEEP); // Use VDAC for short beep
+                    useVDAC(SHORT_BEEP); // Use VDAC for short beep
                 }
 
                 if (use_leds) { writeToLeds(0); } // Turn off LEDs
@@ -70,8 +70,8 @@ void handleSemaphore(char *message) {
     // send the message via semaphore (PWM)
     for (size_t i = 0; i < strlen(message); i++){
 
-        uint32_t r_cmp_val = semaphoreToCMP(getRightSemaphore(message[i]););
-        uint32_t l_cmp_val = semaphoreToCMP(getLeftSemaphore(message[i]););
+        uint32_t r_cmp_val = semaphoreToCMP(getRightSemaphore(message[i]));
+        uint32_t l_cmp_val = semaphoreToCMP(getLeftSemaphore(message[i]));
 
         writeToServo(r_cmp_val, SEVRO_RIGHT);
         writeToServo(l_cmp_val, SEVRO_LEFT);

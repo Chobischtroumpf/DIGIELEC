@@ -134,7 +134,7 @@ char *handleKeypadPress(void) {
 /*
  * Function to read the ADC value from a given channel.
 */
-static uint32_t readAdcChannel(uint8_t channel) {
+uint32_t readAdcChannel(uint8_t channel) {
     
     // select the channel to read from and start the ADC conversion
     Mux_Select(channel);

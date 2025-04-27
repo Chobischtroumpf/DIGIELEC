@@ -32,7 +32,7 @@ void writeToLeds(int tw);
 void writeToServo(uint32_t val, uint8_t servo_idx);
 bool updateKeyBuffer(char key, char *buffer);
 char *handleKeypadPress(void);
-static uint32_t readAdcChannel(uint8_t channel);
+uint32_t readAdcChannel(uint8_t channel);
 void getAdcValue(uint32_t *pot, uint32_t *phot);
 
 
